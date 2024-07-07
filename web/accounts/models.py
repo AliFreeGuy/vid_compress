@@ -10,7 +10,6 @@ class User(AbstractBaseUser , PermissionsMixin):
     is_active = models.BooleanField(default=True)
     creation = models.DateTimeField(auto_now_add=True)
 
-
     USERNAME_FIELD = 'chat_id'
     REQUIRED_FIELDS = ['full_name' , ]
 
@@ -20,7 +19,7 @@ class User(AbstractBaseUser , PermissionsMixin):
     def __str__(self) -> str:
         return f'{str(self.chat_id)} - {self.full_name}'
     
-    
+
     @property
     def is_staff(self):
         return self.is_admin
