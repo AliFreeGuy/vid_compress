@@ -1,7 +1,7 @@
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
-
-
+from accounts.models import User
+import datetime
 
 class BotModel(models.Model):
     name = models.CharField(max_length = 128 , unique = True)
@@ -32,7 +32,7 @@ class PlansModel(models.Model):
 
 
     def __str__(self) -> str:
-        return str(self.name)
+        return str(self.name_fa)
     
 
     class Meta :
@@ -107,3 +107,37 @@ class SettingModel(models.Model):
 
 
 
+class UserPlanModel(models.Model ):
+
+    bot = models.ForeignKey(BotModel , on_delete=models.CASCADE)
+    user = models.ForeignKey(User , on_delete=models.CASCADE , related_name='plans')
+    plan = models.ForeignKey(PlansModel , on_delete=models.CASCADE , related_name='users')
+    expiry = models.DateTimeField(null=True , blank = True )
+    volume = models.BigIntegerField(default=0 , null=True , blank=True)
+    is_active = models.BooleanField(default=True)
+
+
+
+    def __str__(self) -> str:
+        return str(self.user)
+    
+    class Meta :
+        verbose_name = "Subscription"
+        verbose_name_plural = "Subscription"
+    
+    def save(self, *args, **kwargs):
+        active_subscription = UserPlanModel.objects.filter(user=self.user, is_active=True).exclude(id=self.id).first()
+        if active_subscription:
+            active_subscription.delete()
+        
+        data = UserPlanModel.objects.filter(id=self.id)
+
+        if self.plan and not data.exists():
+            self.expiry = datetime.datetime.now() + datetime.timedelta(days=int(self.plan.day))
+            self.volume = self.plan.volume
+        
+
+
+
+
+        super().save(*args, **kwargs)
