@@ -1828,3 +1828,417 @@ AttributeError: 'list' object has no attribute 'write'
 [1;92mINFO [2024-07-08 16:06:18 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
 [1;92mINFO [2024-07-08 16:06:18 - dispatcher.py:154] - Started 8 HandlerTasks[0m
 [1;92mINFO [2024-07-08 16:07:13 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:10:03 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:10:03 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:10:03 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:10:03 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:10:04 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:10:04 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:10:04 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:10:04 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:10:04 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:10:05 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:10:05 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:10:05 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:10:05 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:10:05 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:10:13 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:10:38 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:10:38 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:10:38 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:10:38 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:10:39 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:10:39 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:10:39 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:10:39 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:10:39 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:10:40 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:10:40 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:10:40 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:10:40 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:10:40 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:10:50 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:10:51 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:10:51 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:10:52 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:10:52 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:10:52 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:10:52 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:10:52 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:10:52 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:10:52 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:10:53 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:10:53 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:10:53 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:10:53 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:10:53 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:11:01 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:17:06 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:17:06 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:17:07 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:17:07 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:17:07 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:17:07 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:17:07 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:17:07 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:17:07 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:17:08 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:17:08 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:17:08 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:17:08 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:17:08 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:17:54 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:17:55 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:17:55 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:17:56 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:17:56 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:17:56 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:17:56 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:17:56 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:17:56 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:17:56 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:17:57 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:17:57 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:17:57 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:17:57 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:17:57 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:18:23 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:18:24 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:18:24 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:18:24 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:18:24 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:18:25 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:18:25 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:18:25 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:18:25 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:18:25 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:18:25 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:18:25 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:18:25 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:18:25 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:18:25 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:19:08 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:19:12 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:19:12 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:19:12 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:19:12 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:19:12 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:19:12 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:19:12 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:19:12 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:19:12 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:19:13 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:19:13 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:19:13 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:19:13 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:19:13 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:19:50 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:19:51 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:19:51 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:19:51 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:19:51 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:19:52 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:19:52 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:19:52 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:19:52 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:19:52 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:19:52 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:19:52 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:19:52 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:19:52 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:19:52 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:20:12 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:20:14 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:20:14 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:20:14 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:20:14 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:20:15 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:20:15 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:20:15 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:20:15 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:20:15 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:20:15 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:20:15 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:20:15 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:20:15 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:20:15 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:21:07 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:21:09 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:21:09 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:21:09 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:21:09 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:21:10 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:21:10 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:21:10 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:21:10 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:21:10 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:21:10 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:21:10 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:21:10 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:21:10 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:21:10 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:22:42 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:22:43 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:22:43 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:22:43 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:22:43 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:22:44 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:22:44 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:22:44 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:22:44 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:22:44 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:22:44 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:22:57 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:22:57 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:22:57 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:22:57 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:22:57 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:22:57 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:22:57 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:22:57 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:22:57 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:22:58 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:24:01 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:24:01 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:24:01 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:24:01 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:24:02 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:24:02 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:24:02 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:24:02 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:24:02 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:24:02 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:24:02 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:24:02 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:24:02 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:24:02 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:26:35 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:26:36 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:26:36 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:26:36 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:26:36 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:26:37 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:26:37 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:26:37 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:26:37 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:26:37 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:26:37 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:26:37 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:26:37 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:26:37 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:26:37 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:26:48 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:26:49 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:26:49 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:26:49 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:26:49 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:26:50 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:26:50 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:26:50 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:26:50 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:26:50 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:26:51 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:26:59 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:26:59 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:26:59 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:26:59 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:27:00 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:27:00 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:27:00 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:27:00 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:27:00 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:27:01 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:27:01 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:27:01 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:27:01 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:27:01 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;91mERROR [2024-07-08 16:27:02 - dispatcher.py:253] - string indices must be integers[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/commands_manager.py", line 36, in command_manager
+    await profile_handler(bot ,msg )
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/commands_manager.py", line 56, in profile_handler
+    text.append(f'تاریخ پایان اشتراک : `{str(jdate(user.sub.expiry["date"]))}`')
+TypeError: string indices must be integers
+[1;92mINFO [2024-07-08 16:27:54 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:28:00 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:28:00 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:28:00 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:28:00 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:28:01 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:28:01 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:28:01 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:28:01 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:28:01 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:28:01 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:28:01 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:28:01 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:28:01 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:28:01 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:35:54 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:35:56 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:35:56 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:35:56 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:35:56 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:35:56 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:35:56 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:35:56 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:35:56 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:35:56 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:35:57 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:35:57 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:35:57 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:35:57 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:35:57 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:36:34 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:36:37 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:36:37 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:36:37 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:36:37 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:36:37 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:36:37 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:36:37 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:36:37 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:36:37 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:36:38 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:36:38 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:36:38 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:36:38 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:36:38 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:37:47 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:37:48 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:37:48 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:37:48 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:37:49 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:37:49 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:37:49 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:37:49 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:37:49 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:37:49 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:37:49 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:37:49 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:37:49 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:37:49 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:37:49 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:38:04 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:38:06 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:38:06 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:38:06 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:38:06 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:38:07 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:38:07 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:38:07 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:38:07 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:38:07 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:38:07 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:38:07 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:38:07 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:38:07 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:38:07 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:38:31 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:38:33 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:38:33 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:38:33 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:38:33 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:38:33 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:38:33 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:38:33 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:38:33 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:38:33 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:38:34 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:38:34 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:38:34 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:38:34 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:38:34 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:39:00 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:39:02 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:39:02 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:39:02 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:39:02 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:39:03 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:39:03 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:39:03 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:39:03 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:39:03 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:39:03 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:39:03 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:39:03 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:39:03 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:39:03 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:39:13 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:39:14 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:39:14 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:39:14 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:39:14 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:39:15 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:39:15 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:39:15 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:39:15 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:39:15 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:39:15 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:39:15 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:39:15 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:39:15 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:39:15 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:41:44 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:41:45 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:41:45 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:41:46 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:41:46 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:41:46 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:41:46 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:41:46 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:41:46 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:41:46 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:41:47 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:41:47 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:41:47 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:41:47 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:41:47 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:42:11 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:42:12 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:42:12 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:42:12 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:42:12 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:42:13 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:42:13 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:42:13 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:42:13 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:42:13 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:42:13 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:42:13 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:42:13 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:42:13 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:42:13 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:43:44 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:43:45 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:43:45 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:43:45 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:43:45 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:43:46 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:43:46 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:43:46 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:43:46 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:43:46 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:43:47 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:43:47 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:43:47 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:43:47 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:43:47 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:44:06 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 16:44:07 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 16:44:07 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 16:44:07 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 16:44:07 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 16:44:08 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 16:44:08 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 16:44:08 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 16:44:08 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 16:44:08 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 16:44:09 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 16:44:09 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 16:44:09 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 16:44:09 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 16:44:09 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 16:44:23 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m

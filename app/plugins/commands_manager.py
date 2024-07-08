@@ -4,7 +4,7 @@ from utils import cache
 from utils.connection import connection as con
 from utils import filters as f 
 from utils import btn
-
+from utils.utils import jdate , m_to_g
 
 
 
@@ -32,11 +32,48 @@ async def command_manager(bot, msg):
         elif msg.text == '/plans' : 
             await plans_handler(bot , msg )
 
+        elif msg.text == '/profile' : 
+            await profile_handler(bot ,msg )
 
 
 
 
 
+async def profile_handler(bot , msg ):
+    user = con.get_user(msg.from_user.id )
+    plans = con.plans
+    
+    if user.lang == 'fa':
+        text = []
+        if user.sub.expiry != None  :
+            text.append(f'آیدی اختصاصی : `{str(user.chat_id)}`')
+            for plan in plans :
+                if plan['id'] == user.sub.plan :
+                    text.append(f'اشتراک فعال : `{plan["name_fa"]}`')
+                    break
+            text.append(f'حجم قابل استفاده : `{str(m_to_g(user.sub.volume))} گیگ`')
+            text.append(f'تاریخ پایان اشتراک : `{str(jdate(user.sub.expiry)["date"])}`')
+            text.append('\nبرای ارتقا اشتراک بر روی /plans بزنید')
+            await bot.send_message(chat_id = msg.from_user.id , text = "\n".join(text))
+        else :
+            text =  f'''آیدی اختصاصی : `{str(user.chat_id)}`\nاشتراک فعال : `خالی`\nبرای فعال سازی اشتراک بر روی /plans بزنید\n\n@infoVidCompressBot'''
+            await bot.send_message(chat_id = msg.from_user.id , text = text )
+
+    elif user.lang == 'en':
+        text = []
+        if user.sub.expiry != None  :
+            text.append(f'chat id : `{str(user.chat_id)}`')
+            for plan in plans :
+                if plan['id'] == user.sub.plan :
+                    text.append(f'active subscription : `{plan["name_fa"]}`')
+                    break
+            text.append(f'usable volume : `{str(m_to_g(user.sub.volume))} GB`')
+            text.append(f'subscription end date : `{str(user.sub.expiry[:10])}`')
+            text.append('\nclick on /plans to upgrade your subscription')
+            await bot.send_message(chat_id = msg.from_user.id , text = "\n".join(text))
+        else :
+            text =  f'''chat id : {str(msg.from_user.id)}\nactive subscription : nothing\nclick on /plans to upgrade your subscription\n\n@infoVidCompressBot'''
+            await bot.send_message(chat_id = msg.from_user.id , text = text )
 
 
 
