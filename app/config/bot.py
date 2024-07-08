@@ -15,5 +15,7 @@ REDIS_DB= env.get('REDIS_DB')
 REDIS_PASS = env.get('REDIS_PASS')
 
 
+CACHE_TTL = int(env.get('CACHE_TTL'))
+BOT_USERNAME  = env.get('BOT_USERNAME')
 API_URL = env.get('API_URL')
 API_KEY = env.get('API_KEY')
