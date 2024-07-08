@@ -12,7 +12,7 @@ def m_to_g(data):
     try :
         number = data
         result = number / 1000
-        formatted_result = "{:.2f}".format(result)
+        formatted_result = "{:.1f}".format(result)
         return formatted_result
     except Exception as e : print('m to g utils  ' , str(e))
 
