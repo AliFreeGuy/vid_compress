@@ -3,7 +3,7 @@ import time
 import json
 import requests
 import config
-
+from utils.logger import logger
 
 
 REDIS_HOST = config.REDIS_HOST
@@ -64,33 +64,36 @@ class VidConnec:
 
 
     def user(self, chat_id , full_name , lang = None  , quality = None  ,):
-            password = str(hash(chat_id))
-            last_request_time = self.redis_client.get(f'last_user_request_time:{str(chat_id)}')  
-            current_time = time.time()
-            if last_request_time is None or current_time - float(last_request_time) > CACHE_TTL:
+        try :
+                password = str(hash(chat_id))
+                last_request_time = self.redis_client.get(f'last_user_request_time:{str(chat_id)}')  
+                current_time = time.time()
+                if last_request_time is None or current_time - float(last_request_time) > CACHE_TTL:
 
-                pattern  = 'user_update'
-                data = {}  
-                url = self.link_generator(pattern)
-                data['url'] = url
-                data['chat_id']  = chat_id
-                data['full_name']= full_name
-                data['password']  = password
-                if lang : data['lang'] = lang
-                if quality : data['quality'] = quality
-                
-                
+                    pattern  = 'user_update'
+                    data = {}  
+                    url = self.link_generator(pattern)
+                    data['url'] = url
+                    data['chat_id']  = chat_id
+                    data['full_name']= full_name
+                    data['password']  = password
+                    if lang : data['lang'] = lang
+                    if quality : data['quality'] = quality
+                    
+                    
 
-                res = self.post(url = url , chat_id = chat_id , data = data)
-                res_raw = res
-                if res and res.status_code == 200 :
-                    res = Response(res.json())
-                    self.redis_client.set(f'user_data:{str(chat_id)}', json.dumps(res_raw.json()))
-                    self.redis_client.set(f'last_user_request_time:{str(chat_id)}', current_time)
-                    return res
-            else :
-                return Response(json.loads(self.redis_client.get(f'user_data:{str(chat_id)}')))
-            return None 
+                    res = self.post(url = url , chat_id = chat_id , data = data)
+                    res_raw = res
+                    if res and res.status_code == 200 :
+                        res = Response(res.json())
+                        self.redis_client.set(f'user_data:{str(chat_id)}', json.dumps(res_raw.json()))
+                        self.redis_client.set(f'last_user_request_time:{str(chat_id)}', current_time)
+                        return res
+                else :
+                    return Response(json.loads(self.redis_client.get(f'user_data:{str(chat_id)}')))
+                return None 
+        except Exception as e :
+             logger.error(e)
         
     
     def get_user(self , chat_id):
