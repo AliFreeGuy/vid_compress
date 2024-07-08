@@ -96,6 +96,35 @@ class VidConnec:
              logger.error(e)
         
     
+
+    def update_lang(self , chat_id , full_name , lang ):
+        pattern  = 'user_update'
+        data = {}  
+        url = self.link_generator(pattern)
+        data['url'] = url
+        data['chat_id']  = chat_id
+        data['full_name']= full_name
+        data['lang'] = lang
+        res = self.post(url = url , chat_id = chat_id , data = data)
+        if res and res.status_code == 200 :
+            res = Response(res.json())
+            return res
+        
+    def update_quality(self , chat_id , full_name , quality ):
+        pattern  = 'user_update'
+        data = {}  
+        url = self.link_generator(pattern)
+        data['url'] = url
+        data['chat_id']  = chat_id
+        data['full_name']= full_name
+        data['quality'] = quality
+        res = self.post(url = url , chat_id = chat_id , data = data)
+        if res and res.status_code == 200 :
+            res = Response(res.json())
+            return res
+
+         
+         
     def get_user(self , chat_id):
             pattern  = 'user_update'
             url = self.link_generator(pattern)

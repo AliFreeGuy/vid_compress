@@ -12,7 +12,7 @@ from utils import btn
 
 
 
-@Client.on_message(f.user_not_join , group=0)
+@Client.on_message(filters.private & f.user_not_join & f.updater, group=0)
 async def user_not_join(bot, msg):
     setting  = con.setting
     user = con.get_user(msg.from_user.id)

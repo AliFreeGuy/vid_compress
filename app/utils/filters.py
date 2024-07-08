@@ -1,13 +1,15 @@
 from pyrogram import filters
 from utils.utils import join_checker
 from utils.connection import connection as con 
+from utils.logger import logger
 
-
+async def updater(_ , cli , msg ):
+    try : con.user(chat_id=msg.from_user.id , full_name=msg.from_user.first_name )
+    except Exception as e :
+         logger.error(e)
+    return True
 
 async def user_is_join(_ , cli , msg ):
-        
-        con.user(chat_id=msg.from_user.id , full_name=msg.from_user.first_name )
-        
         if con and con.setting.channel_url and con.setting.channel_chat_id :
             channels = [{'chat_id' : con.setting.channel_chat_id , 'link'  : con.setting.channel_url} ]
             is_join = await join_checker(cli , msg , channels)
@@ -18,8 +20,6 @@ async def user_is_join(_ , cli , msg ):
 
 
 async def user_not_join(_ , cli , msg ):
-        con.user(chat_id=msg.from_user.id , full_name=msg.from_user.first_name )
-        
         if con and con.setting.channel_url and con.setting.channel_chat_id :
             channels = [{'chat_id' : con.setting.channel_chat_id , 'link'  : con.setting.channel_url} ]
             is_join = await join_checker(cli , msg , channels)
@@ -28,6 +28,7 @@ async def user_not_join(_ , cli , msg ):
         return False
 
 
+updater = filters.create(updater)
 user_not_join=filters.create(user_not_join)
 user_is_join = filters.create(user_is_join)
 

@@ -928,3 +928,600 @@ AttributeError: 'Response' object has no attribute 'support_text_fa'
 [1;92mINFO [2024-07-08 14:40:37 - client.py:775] - [vid-compressbot] Successfully loaded 2 plugins from "plugins"[0m
 [1;92mINFO [2024-07-08 14:40:37 - dispatcher.py:154] - Started 8 HandlerTasks[0m
 [1;92mINFO [2024-07-08 14:40:50 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:04:46 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:04:46 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:04:46 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:04:46 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:04:47 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:04:47 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:04:47 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:04:47 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:04:47 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:04:48 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:04:48 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:04:48 - client.py:775] - [vid-compressbot] Successfully loaded 2 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:04:48 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;91mERROR [2024-07-08 15:06:09 - dispatcher.py:229] - 'NoneType' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/handlers/handler.py", line 35, in check
+    return await self.filters(client, update)
+  File "/home/freeguy/Desktop/project/vid-compress/app/utils/filters.py", line 21, in user_not_join
+    con.user(chat_id=msg.from_user.id , full_name=msg.from_user.first_name )
+AttributeError: 'NoneType' object has no attribute 'id'
+[1;91mERROR [2024-07-08 15:06:09 - dispatcher.py:229] - 'NoneType' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/handlers/handler.py", line 35, in check
+    return await self.filters(client, update)
+  File "/home/freeguy/Desktop/project/vid-compress/app/utils/filters.py", line 9, in user_is_join
+    con.user(chat_id=msg.from_user.id , full_name=msg.from_user.first_name )
+AttributeError: 'NoneType' object has no attribute 'id'
+[1;92mINFO [2024-07-08 15:07:15 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:07:30 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:07:30 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:07:30 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:07:30 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:07:31 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:07:31 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:07:31 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:07:31 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:07:31 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:07:31 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:07:31 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:07:31 - client.py:775] - [vid-compressbot] Successfully loaded 2 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:07:31 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 15:07:44 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:07:46 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:07:46 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:07:46 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:07:46 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:07:46 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:07:46 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:07:46 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:07:46 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:07:46 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:07:47 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:07:47 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:07:47 - client.py:775] - [vid-compressbot] Successfully loaded 2 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:07:47 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;91mERROR [2024-07-08 15:08:03 - dispatcher.py:229] - 'NoneType' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/handlers/handler.py", line 35, in check
+    return await self.filters(client, update)
+  File "/home/freeguy/Desktop/project/vid-compress/app/utils/filters.py", line 21, in user_not_join
+    con.user(chat_id=msg.from_user.id , full_name=msg.from_user.first_name )
+AttributeError: 'NoneType' object has no attribute 'id'
+[1;91mERROR [2024-07-08 15:08:03 - dispatcher.py:229] - 'NoneType' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/handlers/handler.py", line 35, in check
+    return await self.filters(client, update)
+  File "/home/freeguy/Desktop/project/vid-compress/app/utils/filters.py", line 9, in user_is_join
+    con.user(chat_id=msg.from_user.id , full_name=msg.from_user.first_name )
+AttributeError: 'NoneType' object has no attribute 'id'
+[1;91mERROR [2024-07-08 15:08:17 - dispatcher.py:229] - 'NoneType' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/handlers/handler.py", line 35, in check
+    return await self.filters(client, update)
+  File "/home/freeguy/Desktop/project/vid-compress/app/utils/filters.py", line 21, in user_not_join
+    con.user(chat_id=msg.from_user.id , full_name=msg.from_user.first_name )
+AttributeError: 'NoneType' object has no attribute 'id'
+[1;91mERROR [2024-07-08 15:08:17 - dispatcher.py:229] - 'NoneType' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/handlers/handler.py", line 35, in check
+    return await self.filters(client, update)
+  File "/home/freeguy/Desktop/project/vid-compress/app/utils/filters.py", line 9, in user_is_join
+    con.user(chat_id=msg.from_user.id , full_name=msg.from_user.first_name )
+AttributeError: 'NoneType' object has no attribute 'id'
+[1;92mINFO [2024-07-08 15:09:37 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:09:38 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:09:38 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:09:39 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:09:39 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:09:39 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:09:39 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:09:39 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:09:39 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:09:39 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:09:40 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:09:40 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:09:40 - client.py:775] - [vid-compressbot] Successfully loaded 2 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:09:40 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 15:10:46 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:10:47 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:10:47 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:10:47 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:10:47 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:10:48 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:10:48 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:10:48 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:10:48 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:10:48 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:10:48 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:10:48 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:10:48 - client.py:775] - [vid-compressbot] Successfully loaded 2 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:10:48 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 15:11:31 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:11:32 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:11:32 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:11:32 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:11:32 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:11:33 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:11:33 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:11:33 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:11:33 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:11:33 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:11:34 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:11:34 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:11:34 - client.py:775] - [vid-compressbot] Successfully loaded 2 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:11:34 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 15:12:58 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:13:00 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:13:00 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:13:00 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:13:00 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:13:01 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:13:01 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:13:01 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:13:01 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:13:01 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:13:01 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:13:01 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:13:01 - client.py:775] - [vid-compressbot] Successfully loaded 2 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:13:01 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;91mERROR [2024-07-08 15:13:06 - dispatcher.py:229] - 'NoneType' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/handlers/handler.py", line 35, in check
+    return await self.filters(client, update)
+  File "/home/freeguy/Desktop/project/vid-compress/app/utils/filters.py", line 21, in user_not_join
+    con.user(chat_id=msg.from_user.id , full_name=msg.from_user.first_name )
+AttributeError: 'NoneType' object has no attribute 'id'
+[1;91mERROR [2024-07-08 15:13:06 - dispatcher.py:229] - 'NoneType' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/handlers/handler.py", line 35, in check
+    return await self.filters(client, update)
+  File "/home/freeguy/Desktop/project/vid-compress/app/utils/filters.py", line 9, in user_is_join
+    con.user(chat_id=msg.from_user.id , full_name=msg.from_user.first_name )
+AttributeError: 'NoneType' object has no attribute 'id'
+[1;92mINFO [2024-07-08 15:13:45 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:13:46 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:13:46 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:13:46 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:13:46 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:13:47 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:13:47 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:13:47 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:13:47 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:13:47 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:13:47 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:13:47 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:13:47 - client.py:775] - [vid-compressbot] Successfully loaded 2 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:13:47 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;91mERROR [2024-07-08 15:14:04 - dispatcher.py:229] - 'NoneType' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/handlers/handler.py", line 35, in check
+    return await self.filters(client, update)
+  File "/home/freeguy/Desktop/project/vid-compress/app/utils/filters.py", line 21, in user_not_join
+    con.user(chat_id=msg.from_user.id , full_name=msg.from_user.first_name )
+AttributeError: 'NoneType' object has no attribute 'id'
+[1;91mERROR [2024-07-08 15:14:04 - dispatcher.py:229] - 'NoneType' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/handlers/handler.py", line 35, in check
+    return await self.filters(client, update)
+  File "/home/freeguy/Desktop/project/vid-compress/app/utils/filters.py", line 9, in user_is_join
+    con.user(chat_id=msg.from_user.id , full_name=msg.from_user.first_name )
+AttributeError: 'NoneType' object has no attribute 'id'
+[1;91mERROR [2024-07-08 15:15:13 - dispatcher.py:229] - 'NoneType' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/handlers/handler.py", line 35, in check
+    return await self.filters(client, update)
+  File "/home/freeguy/Desktop/project/vid-compress/app/utils/filters.py", line 21, in user_not_join
+    con.user(chat_id=msg.from_user.id , full_name=msg.from_user.first_name )
+AttributeError: 'NoneType' object has no attribute 'id'
+[1;91mERROR [2024-07-08 15:15:13 - dispatcher.py:229] - 'NoneType' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/handlers/handler.py", line 35, in check
+    return await self.filters(client, update)
+  File "/home/freeguy/Desktop/project/vid-compress/app/utils/filters.py", line 9, in user_is_join
+    con.user(chat_id=msg.from_user.id , full_name=msg.from_user.first_name )
+AttributeError: 'NoneType' object has no attribute 'id'
+[1;91mERROR [2024-07-08 15:16:02 - dispatcher.py:229] - 'NoneType' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/handlers/handler.py", line 35, in check
+    return await self.filters(client, update)
+  File "/home/freeguy/Desktop/project/vid-compress/app/utils/filters.py", line 21, in user_not_join
+    con.user(chat_id=msg.from_user.id , full_name=msg.from_user.first_name )
+AttributeError: 'NoneType' object has no attribute 'id'
+[1;91mERROR [2024-07-08 15:16:02 - dispatcher.py:229] - 'NoneType' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/handlers/handler.py", line 35, in check
+    return await self.filters(client, update)
+  File "/home/freeguy/Desktop/project/vid-compress/app/utils/filters.py", line 9, in user_is_join
+    con.user(chat_id=msg.from_user.id , full_name=msg.from_user.first_name )
+AttributeError: 'NoneType' object has no attribute 'id'
+[1;91mERROR [2024-07-08 15:16:07 - dispatcher.py:229] - 'NoneType' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/handlers/handler.py", line 35, in check
+    return await self.filters(client, update)
+  File "/home/freeguy/Desktop/project/vid-compress/app/utils/filters.py", line 21, in user_not_join
+    con.user(chat_id=msg.from_user.id , full_name=msg.from_user.first_name )
+AttributeError: 'NoneType' object has no attribute 'id'
+[1;91mERROR [2024-07-08 15:16:07 - dispatcher.py:229] - 'NoneType' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/handlers/handler.py", line 35, in check
+    return await self.filters(client, update)
+  File "/home/freeguy/Desktop/project/vid-compress/app/utils/filters.py", line 9, in user_is_join
+    con.user(chat_id=msg.from_user.id , full_name=msg.from_user.first_name )
+AttributeError: 'NoneType' object has no attribute 'id'
+[1;92mINFO [2024-07-08 15:17:55 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:17:56 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:17:56 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:17:56 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:17:56 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:17:57 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:17:57 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:17:57 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:17:57 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:17:57 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:17:58 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:17:58 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:17:58 - client.py:775] - [vid-compressbot] Successfully loaded 2 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:17:58 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;91mERROR [2024-07-08 15:17:58 - dispatcher.py:229] - coroutines cannot be used with run_in_executor()[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/handlers/handler.py", line 35, in check
+    return await self.filters(client, update)
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/filters.py", line 81, in __call__
+    y = await client.loop.run_in_executor(
+  File "uvloop/loop.pyx", line 2717, in uvloop.loop.Loop.run_in_executor
+TypeError: coroutines cannot be used with run_in_executor()
+[1;91mERROR [2024-07-08 15:17:59 - dispatcher.py:229] - coroutines cannot be used with run_in_executor()[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/handlers/handler.py", line 35, in check
+    return await self.filters(client, update)
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/filters.py", line 81, in __call__
+    y = await client.loop.run_in_executor(
+  File "uvloop/loop.pyx", line 2717, in uvloop.loop.Loop.run_in_executor
+TypeError: coroutines cannot be used with run_in_executor()
+[1;92mINFO [2024-07-08 15:18:00 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:18:21 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:18:21 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:18:21 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:18:21 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:18:21 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:18:21 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:18:21 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:18:21 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:18:21 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:18:22 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:18:22 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:18:22 - client.py:775] - [vid-compressbot] Successfully loaded 2 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:18:22 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;91mERROR [2024-07-08 15:18:24 - dispatcher.py:229] - updater() takes 2 positional arguments but 3 were given[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/handlers/handler.py", line 35, in check
+    return await self.filters(client, update)
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/filters.py", line 79, in __call__
+    y = await self.other(client, update)
+TypeError: updater() takes 2 positional arguments but 3 were given
+[1;92mINFO [2024-07-08 15:18:27 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:18:35 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:18:35 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:18:35 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:18:35 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:18:36 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:18:36 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:18:36 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:18:36 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:18:36 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:18:36 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:18:36 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:18:36 - client.py:775] - [vid-compressbot] Successfully loaded 2 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:18:36 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;91mERROR [2024-07-08 15:19:30 - dispatcher.py:229] - 'NoneType' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/handlers/handler.py", line 35, in check
+    return await self.filters(client, update)
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/filters.py", line 79, in __call__
+    y = await self.other(client, update)
+  File "/home/freeguy/Desktop/project/vid-compress/app/utils/filters.py", line 7, in updater
+    con.user(chat_id=msg.from_user.id , full_name=msg.from_user.first_name )
+AttributeError: 'NoneType' object has no attribute 'id'
+[1;92mINFO [2024-07-08 15:20:37 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:20:39 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:20:39 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:20:39 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:20:39 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:20:40 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:20:40 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:20:40 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:20:40 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:20:40 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:21:12 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:21:12 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:21:12 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:21:12 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:21:12 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:21:12 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:21:12 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:21:12 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:21:12 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:21:13 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("command_manager") in group 1 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 15:21:13 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:21:13 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:21:13 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:21:13 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 15:21:22 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:21:44 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:21:44 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:21:44 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:21:44 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:21:44 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:21:44 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:21:44 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:21:44 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:21:44 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:21:45 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("command_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 15:21:45 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:21:45 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:21:45 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:21:45 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;91mERROR [2024-07-08 15:23:45 - filters.py:9] - 'NoneType' object has no attribute 'id'[0m
+[1;92mINFO [2024-07-08 15:24:20 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:24:21 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:24:21 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:24:21 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:24:21 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:24:22 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:24:22 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:24:22 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:24:22 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:24:22 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:24:22 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("command_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 15:24:22 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:24:22 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:24:22 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:24:22 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;91mERROR [2024-07-08 15:27:30 - filters.py:10] - 'NoneType' object has no attribute 'id'[0m
+[1;92mINFO [2024-07-08 15:27:57 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:28:46 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:28:46 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:28:46 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:28:46 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:28:47 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:28:47 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:28:47 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:28:47 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:28:47 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:28:47 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("command_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 15:28:47 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:28:47 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:28:47 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:28:47 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;91mERROR [2024-07-08 15:28:54 - dispatcher.py:229] - 'CallbackQuery' object has no attribute 'chat'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/handlers/handler.py", line 35, in check
+    return await self.filters(client, update)
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/filters.py", line 66, in __call__
+    x = await self.base(client, update)
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/filters.py", line 66, in __call__
+    x = await self.base(client, update)
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/filters.py", line 443, in private_filter
+    return bool(m.chat and m.chat.type in {enums.ChatType.PRIVATE, enums.ChatType.BOT})
+AttributeError: 'CallbackQuery' object has no attribute 'chat'
+[1;92mINFO [2024-07-08 15:29:10 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:29:12 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:29:12 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:29:12 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:29:12 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:29:12 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:29:12 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:29:12 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:29:12 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:29:12 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:29:13 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("command_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 15:29:13 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:29:13 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:29:13 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:29:13 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 15:36:21 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:36:23 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:36:23 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:36:23 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:36:23 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:36:24 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:36:24 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:36:24 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:36:24 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:36:24 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:36:25 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 15:36:25 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:36:25 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:36:25 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:36:25 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 15:36:40 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:38:01 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:38:01 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:38:01 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:38:01 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:38:01 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:38:01 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:38:01 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:38:01 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:38:01 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:38:02 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 15:38:02 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:38:02 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:38:02 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:38:02 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 15:39:15 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:39:17 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:39:17 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:39:17 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:39:17 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:39:18 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:39:18 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:39:18 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:39:18 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:39:18 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:39:18 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 15:39:18 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:39:18 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:39:18 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:39:18 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;91mERROR [2024-07-08 15:39:23 - dispatcher.py:253] - 'NoneType' object has no attribute 'lang'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/callback_manager.py", line 21, in callback_manager
+    await setting_handler(bot , call )
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/callback_manager.py", line 42, in setting_handler
+    setting_text = setting.setting_text_fa if user.lang == 'fa' else setting.setting_text_en
+AttributeError: 'NoneType' object has no attribute 'lang'
+[1;92mINFO [2024-07-08 15:40:32 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:40:34 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:40:34 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:40:34 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:40:34 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:40:35 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:40:35 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:40:35 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:40:35 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:40:35 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:40:35 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 15:40:35 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:40:35 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:40:35 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:40:35 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;91mERROR [2024-07-08 15:40:52 - dispatcher.py:253] - Telegram says: [400 MESSAGE_NOT_MODIFIED] - The message was not modified because you tried to edit it using the same content (caused by "messages.EditMessage")[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/callback_manager.py", line 21, in callback_manager
+    await setting_handler(bot , call )
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/callback_manager.py", line 34, in setting_handler
+    await bot.edit_message_text(chat_id = call.from_user.id ,
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/methods/messages/edit_message_text.py", line 82, in edit_message_text
+    r = await self.invoke(
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.MessageNotModified: Telegram says: [400 MESSAGE_NOT_MODIFIED] - The message was not modified because you tried to edit it using the same content (caused by "messages.EditMessage")
+[1;92mINFO [2024-07-08 15:41:36 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:41:38 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:41:38 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:41:38 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:41:38 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:41:38 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:41:38 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:41:38 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:41:38 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:41:38 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:41:39 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 15:41:39 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:41:39 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:41:39 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:41:39 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 15:43:24 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:43:27 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:43:27 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:43:27 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:43:27 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:43:27 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:43:27 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:43:27 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:43:27 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:43:27 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:43:28 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 15:43:28 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:43:28 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:43:28 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:43:28 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;93mWARNING [2024-07-08 15:43:33 - callback_manager.py:55] - Telegram says: [400 MESSAGE_NOT_MODIFIED] - The message was not modified because you tried to edit it using the same content (caused by "messages.EditMessage")[0m
+[1;93mWARNING [2024-07-08 15:43:43 - callback_manager.py:55] - Telegram says: [400 MESSAGE_NOT_MODIFIED] - The message was not modified because you tried to edit it using the same content (caused by "messages.EditMessage")[0m
+[1;92mINFO [2024-07-08 15:44:57 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:48:13 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:48:13 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:48:13 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:48:13 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:48:14 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:48:14 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:48:14 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:48:14 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:48:14 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:48:14 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 15:48:14 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:48:14 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:48:14 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:48:14 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;91mERROR [2024-07-08 15:48:22 - dispatcher.py:253] - replace expected at least 2 arguments, got 1[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/callback_manager.py", line 21, in callback_manager
+    await setting_handler(bot , call )
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/callback_manager.py", line 44, in setting_handler
+    if user.quality == status.replace('quality_'):
+TypeError: replace expected at least 2 arguments, got 1
+[1;92mINFO [2024-07-08 15:48:33 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 15:48:35 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 15:48:35 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 15:48:35 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 15:48:35 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 15:48:36 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 15:48:36 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 15:48:36 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 15:48:36 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 15:48:36 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 15:48:36 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-08 15:48:36 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 15:48:36 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 15:48:36 - client.py:775] - [vid-compressbot] Successfully loaded 3 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 15:48:36 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;93mWARNING [2024-07-08 15:49:08 - callback_manager.py:40] - Telegram says: [400 MESSAGE_NOT_MODIFIED] - The message was not modified because you tried to edit it using the same content (caused by "messages.EditMessage")[0m
+[1;92mINFO [2024-07-08 15:49:14 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m

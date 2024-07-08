@@ -12,7 +12,7 @@ from utils import btn
 
 
 
-@Client.on_message(f.user_is_join , group=1)
+@Client.on_message(filters.private &f.user_is_join & f.updater , group=1)
 async def command_manager(bot, msg):
     if msg.text  :
 
@@ -26,6 +26,18 @@ async def command_manager(bot, msg):
         elif msg.text == '/start' : 
             await start_handler(bot , msg )
 
+        elif msg.text == '/setting' : 
+            await setting_handler(bot , msg )
+
+
+
+
+
+async def setting_handler(bot , msg ):
+    setting = con.setting
+    user = con.get_user(msg.from_user.id )
+    setting_text = setting.setting_text_fa if user.lang == 'fa' else setting.setting_text_en
+    await bot.send_message(msg.from_user.id , text = setting_text , reply_markup = btn.setting_btn(user_lang=user.lang , user_quality=user.quality))
 
 
 async def start_handler(bot ,msg ):
