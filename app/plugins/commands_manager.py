@@ -28,9 +28,44 @@ async def command_manager(bot, msg):
 
         elif msg.text == '/setting' : 
             await setting_handler(bot , msg )
+        
+        elif msg.text == '/plans' : 
+            await plans_handler(bot , msg )
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+async def plans_handler(bot , msg ):
+    try : 
+        plans = con.plans
+        user = con.get_user(chat_id  = msg.from_user.id )
+        setting = con.setting
+        print(setting)
+        plans_text = []
+        for plan in plans : 
+            if user.lang == 'fa' : plans_text.append(plan['des_fa'])
+            else :plans_text.append(plan['des_en'])
+        await bot.send_message(
+                chat_id = msg.from_user.id ,
+                text = '\n\n〰️〰️〰️〰️〰〰️〰️〰️〰️〰〰️\n\n'.join(plans_text),
+                reply_markup = btn.admin_chat_id(user_lang = user.lang , chat_id = setting.admin_chat_id))
+        
+    except Exception as e :
+        logger.error(e)
+    
 
 
 async def setting_handler(bot , msg ):

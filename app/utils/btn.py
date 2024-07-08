@@ -15,6 +15,13 @@ def join_channel(lang , url ):
 
 
 
+def admin_chat_id(user_lang , chat_id ):
+    if user_lang == 'fa' : 
+        return InlineKeyboardMarkup([[InlineKeyboardButton(f'خرید از پشتیبانی'  , url=f'tg://openmessage?user_id={str(chat_id)}')]])
+    elif user_lang == 'en' :
+        return InlineKeyboardMarkup([[InlineKeyboardButton(f'Buy from support'  , url=f'tg://openmessage?user_id={str(chat_id)}')]])
+        
+
 def setting_btn(user_lang , user_quality):
     buttons = []
 
