@@ -850,3 +850,81 @@ AttributeError: 'list' object has no attribute 'write'
 [1;92mINFO [2024-07-08 14:33:14 - client.py:775] - [vid-compressbot] Successfully loaded 1 plugin from "plugins"[0m
 [1;92mINFO [2024-07-08 14:33:14 - dispatcher.py:154] - Started 8 HandlerTasks[0m
 [1;92mINFO [2024-07-08 14:33:49 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 14:38:03 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 14:38:03 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 14:38:04 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 14:38:04 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 14:38:04 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 14:38:04 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 14:38:04 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 14:38:04 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 14:38:04 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 14:38:05 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 14:38:05 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 14:38:05 - client.py:775] - [vid-compressbot] Successfully loaded 2 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 14:38:05 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;91mERROR [2024-07-08 14:38:21 - dispatcher.py:253] - 'Response' object has no attribute 'support_text_fa'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/commands_manager.py", line 24, in command_manager
+    await support_handler(bot , msg )
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/commands_manager.py", line 32, in support_handler
+    support_text = setting.support_text_fa if user.lang == 'fa' else setting.support_text_en
+  File "/home/freeguy/Desktop/project/vid-compress/app/utils/connection.py", line 154, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{attr}'")
+AttributeError: 'Response' object has no attribute 'support_text_fa'
+[1;92mINFO [2024-07-08 14:38:37 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 14:38:39 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 14:38:39 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 14:38:39 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 14:38:39 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 14:38:40 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 14:38:40 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 14:38:40 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 14:38:40 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 14:38:40 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 14:38:40 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 14:38:40 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 14:38:40 - client.py:775] - [vid-compressbot] Successfully loaded 2 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 14:38:40 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;91mERROR [2024-07-08 14:38:42 - dispatcher.py:253] - 'Response' object has no attribute 'support_text_fa'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/commands_manager.py", line 24, in command_manager
+    await support_handler(bot , msg )
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/commands_manager.py", line 33, in support_handler
+    support_text = setting.support_text_fa if user.lang == 'fa' else setting.support_text_en
+  File "/home/freeguy/Desktop/project/vid-compress/app/utils/connection.py", line 154, in __getattr__
+    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{attr}'")
+AttributeError: 'Response' object has no attribute 'support_text_fa'
+[1;92mINFO [2024-07-08 14:39:12 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 14:39:14 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 14:39:14 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 14:39:14 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 14:39:14 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 14:39:15 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 14:39:15 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 14:39:15 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 14:39:15 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 14:39:15 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 14:39:15 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 14:39:15 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 14:39:15 - client.py:775] - [vid-compressbot] Successfully loaded 2 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 14:39:15 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 14:39:29 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-08 14:40:35 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-07-08 14:40:35 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-08 14:40:35 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-08 14:40:35 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-08 14:40:36 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-08 14:40:36 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-08 14:40:36 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-08 14:40:36 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-08 14:40:36 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-08 14:40:37 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-08 14:40:37 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-08 14:40:37 - client.py:775] - [vid-compressbot] Successfully loaded 2 plugins from "plugins"[0m
+[1;92mINFO [2024-07-08 14:40:37 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-08 14:40:50 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
