@@ -2,6 +2,17 @@ from pyrogram import filters
 from utils.utils import join_checker
 from utils.connection import connection as con 
 from utils.logger import logger
+import config
+
+
+
+
+async def user_is_admin(_ , cli , msg ):
+    admins = [config.ADMIN]
+    if msg.from_user.id in admins : 
+         return True
+    return False
+
 
 async def updater(_ , cli , msg ):
     try : con.user(chat_id=msg.from_user.id , full_name=msg.from_user.first_name )
@@ -31,4 +42,4 @@ async def user_not_join(_ , cli , msg ):
 updater = filters.create(updater)
 user_not_join=filters.create(user_not_join)
 user_is_join = filters.create(user_is_join)
-
+is_admin  =filters.create(user_is_admin)

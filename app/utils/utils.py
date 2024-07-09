@@ -7,6 +7,14 @@ import jdatetime
 import datetime
 from .logger import logger
 import jdatetime
+import uuid
+
+
+
+
+
+def random_code():
+    return uuid.uuid4()
 
 def m_to_g(data):
     try :

@@ -1,4 +1,18 @@
-from pyrogram.types import (ReplyKeyboardMarkup, InlineKeyboardMarkup,InlineKeyboardButton , KeyboardButton)
+from pyrogram.types import (ReplyKeyboardMarkup, InlineKeyboardMarkup,InlineKeyboardButton , KeyboardButton , WebAppInfo)
+import config
+
+
+
+def admin_inline_query(sub_code):
+    reply_markup=InlineKeyboardMarkup(
+                    [
+                        [InlineKeyboardButton(
+                            " فعالسازی اشتراک | Activate subscription",
+                            url=f"https://t.me/{config.BOT_USERNAME}?start=sub_{sub_code}",
+                        )]
+                    ]
+                )
+    return reply_markup
 
 
 

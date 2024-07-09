@@ -2,8 +2,8 @@ from pyrogram import Client, filters
 from utils import logger
 from utils import cache
 from utils.connection import connection as con
-from utils import filters as f 
-from utils import btn
+from utils import filters as f  
+from utils import btn ,txt
 from utils.utils import jdate , m_to_g
 
 
@@ -34,8 +34,28 @@ async def command_manager(bot, msg):
 
         elif msg.text == '/profile' : 
             await profile_handler(bot ,msg )
+        
+        elif msg.text.startswith('/start sub_'):
+            await activate_sub_handler(bot , msg )
 
 
+
+
+async def activate_sub_handler(bot , msg ):
+    sub_code = msg.text.replace('/start sub_' , '')
+    sub_key = f'sub:{sub_code}'
+    sub_data = cache.redis.hgetall(sub_key)
+    user = con.get_user(msg.from_user.id)
+    
+    if sub_data :
+        
+        if sub_data['user'] == 'none' : 
+            # add sub for user 
+            cache.redis.hset(sub_key ,'user'  ,  str(msg.from_user.id))
+            await bot.send_message(msg.from_user.id  , 'eshterak faal shod ')
+        
+        else :await bot.send_message(msg.from_user.id , txt.sub_not_active(user_lang=user.lang))
+    else :await bot.send_message(msg.from_user.id , txt.sub_not_found(user.lang) )
 
 
 
