@@ -9,6 +9,7 @@ urlpatterns = [
     path('api/setting/', views.SettingAPIView.as_view() , name='setting'),
     path('api/plans/' , views.PlansAPIView.as_view() ,name='plans') ,
 
-    path('api/add_sub/' , views.AddSubUserAPIView.as_view() , name='add_su')
+    path('api/add_sub/' , views.AddSubUserAPIView.as_view() , name='add_su') ,
+    path('api/rm_sub/' , views.RemoveSubUserAPIView.as_view() , name='remove_sub')
 
 ]

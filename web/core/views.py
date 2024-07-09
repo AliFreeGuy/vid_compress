@@ -11,6 +11,26 @@ from . import models
 
 
 
+class RemoveSubUserAPIView(APIView):
+    authentication_classes = [TokenAuthentication, ]
+    permission_classes = [permissions.IsAuthenticated]
+
+    def post(self , request ):
+        chat_id = request.data.get('chat_id')
+        user = User.objects.filter(chat_id = int(chat_id))
+        if user.exists() :
+            user = user.first()
+            user_plans  = models.UserPlanModel.objects.filter(user = user)
+            print(user_plans)
+            if user_plans :
+                user_plans.first().delete()
+                return JsonResponse({'status' : 'ok'})
+        return JsonResponse({'status' : 'no'})
+
+
+        
+
+
 
 
 
@@ -18,7 +38,6 @@ from . import models
 class AddSubUserAPIView(APIView):
     authentication_classes = [TokenAuthentication, ]
     permission_classes = [permissions.IsAuthenticated]
-
 
     def post(self , request):
         chat_id = request.data.get('chat_id')
