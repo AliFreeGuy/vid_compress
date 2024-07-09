@@ -123,6 +123,14 @@ class VidConnec:
             res = Response(res.json())
             return res
 
+    def add_sub(self , chat_id  , plan_tag ):
+        pattern = 'add_sub'
+        url = self.link_generator(pattern)
+        data = {'plan_tag' :plan_tag , 'chat_id' : chat_id}
+        res = self.post(url=url , chat_id=chat_id , data=data)
+        if res.status_code == 200 :
+             return True
+        return False
          
          
     def get_user(self , chat_id):

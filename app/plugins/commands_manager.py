@@ -48,12 +48,11 @@ async def activate_sub_handler(bot , msg ):
     user = con.get_user(msg.from_user.id)
     
     if sub_data :
-        
         if sub_data['user'] == 'none' : 
-            # add sub for user 
+            con.add_sub(chat_id = msg.from_user.id , plan_tag=sub_data['plan'])
             cache.redis.hset(sub_key ,'user'  ,  str(msg.from_user.id))
-            await bot.send_message(msg.from_user.id  , 'eshterak faal shod ')
-        
+            await bot.send_message(msg.from_user.id , '🥳')
+            await bot.send_message(msg.from_user.id  ,txt.user_sub_activated(user.lang))
         else :await bot.send_message(msg.from_user.id , txt.sub_not_active(user_lang=user.lang))
     else :await bot.send_message(msg.from_user.id , txt.sub_not_found(user.lang) )
 
