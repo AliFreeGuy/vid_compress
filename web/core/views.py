@@ -9,6 +9,33 @@ from django.http import JsonResponse
 from . import models
 
 
+
+
+
+
+
+
+class AddSubUserAPIView(APIView):
+    authentication_classes = [TokenAuthentication, ]
+    permission_classes = [permissions.IsAuthenticated]
+
+
+    def post(self , request):
+        chat_id = request.data.get('chat_id')
+        plan_tag = request.data.get('plan_tag')
+        user = User.objects.filter(chat_id = int(chat_id))
+        plan = models.PlansModel.objects.filter(tag = plan_tag)
+        if user.exists() and plan.exists():
+            user = user.first()
+            bot = models.BotModel.objects.first()
+            plan = plan.first()
+            models.UserPlanModel.objects.create(user = user , plan = plan , bot = bot)
+            return JsonResponse({'status' : 'ok'})
+        return JsonResponse({'status' : 'no'})
+
+
+
+
 class UserUpdateAPIView(APIView):
     authentication_classes = [TokenAuthentication, ]
     permission_classes = [permissions.IsAuthenticated]
