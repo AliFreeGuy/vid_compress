@@ -17,6 +17,7 @@ async def user_is_admin(_ , cli , msg ):
 
 async def updater(_ , cli , msg ):
     try :
+        
         user =  con.user(chat_id=msg.from_user.id , full_name=msg.from_user.first_name )
         if user and user.sub.expiry == None :
                 con.add_sub(chat_id=msg.from_user.id , plan_tag='free')
