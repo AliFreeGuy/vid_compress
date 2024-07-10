@@ -37,7 +37,8 @@ async def user_joined(bot , call ):
     setting  = con.setting
     user = con.get_user(call.from_user.id)
     start_text = setting.start_text_fa if user.lang == 'fa' else setting.start_text_en
-    await bot.send_message(call.from_user.id, text=start_text)
+    placeholder_text = setting.placeholder_text_fa if user.lang == 'fa' else setting.placeholder_text_en
+    await bot.send_message(call.from_user.id, text=start_text  , reply_markup = placeholder_text)
 
 
 
@@ -51,6 +52,9 @@ async def setting_handler(bot , call ):
         user = con.update_lang(chat_id=call.from_user.id , full_name=call.from_user.first_name , lang=status.replace('lang_' , ''))
         setting = con.setting
         setting_text = setting.setting_text_fa if user.lang == 'fa' else setting.setting_text_en
+        placeholder_text = setting.placeholder_text_fa if user.lang == 'fa' else setting.placeholder_text_en
+        chagne_btn_lang = await bot.send_message(call.from_user.id , text =txt.changed_lang(user.lang) , reply_markup = btn.user_panel_menu(user_lang=user.lang , placeholder=placeholder_text))
+        
         try :
             await bot.edit_message_text(chat_id = call.from_user.id ,
                                         text = setting_text ,
@@ -58,6 +62,8 @@ async def setting_handler(bot , call ):
                                         reply_markup = btn.setting_btn(user_lang=user.lang , user_quality=user.quality))
         except Exception as e :
             logger.warning(e)
+
+
 
     elif status.startswith('quality_'):
         user  = con.get_user(call.from_user.id )

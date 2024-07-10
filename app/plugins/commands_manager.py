@@ -8,31 +8,27 @@ from utils.utils import jdate , m_to_g
 
 
 
-
-
-
-
 @Client.on_message(filters.private &f.user_is_join & f.updater , group=1)
 async def command_manager(bot, msg):
     if msg.text  :
 
 
-        if msg.text == '/help' : 
+        if msg.text in ['/help' , '🆘 help' , '🆘 راهنما']  : 
             await help_handler(bot , msg )
         
-        elif msg.text == '/support' : 
+        elif msg.text in ['/support' ,'🧑‍✈️ support' , '🧑‍✈️ پشتیبانی' ] : 
             await support_handler(bot , msg )
 
         elif msg.text == '/start' : 
             await start_handler(bot , msg )
 
-        elif msg.text == '/setting' : 
+        elif msg.text in ['/setting' , '⚙️ setting' , '⚙️ تنظیمات'] : 
             await setting_handler(bot , msg )
         
-        elif msg.text == '/plans' : 
+        elif msg.text in ['/plans' , '🎖 plans' , '🎖 اشتراک'] : 
             await plans_handler(bot , msg )
 
-        elif msg.text == '/profile' : 
+        elif msg.text in ['/profile' , '🎫 profile' ,'🎫 پروفایل' ] : 
             await profile_handler(bot ,msg )
         
         elif msg.text.startswith('/start sub_'):
@@ -109,7 +105,6 @@ async def plans_handler(bot , msg ):
         plans = con.plans
         user = con.get_user(chat_id  = msg.from_user.id )
         setting = con.setting
-        print(setting)
         plans_text = []
         for plan in plans : 
             if user.lang == 'fa' : plans_text.append(plan['des_fa'])
@@ -136,20 +131,23 @@ async def start_handler(bot ,msg ):
     setting  = con.setting
     user = con.get_user(msg.from_user.id)
     start_text = setting.start_text_fa if user.lang == 'fa' else setting.start_text_en
-    await bot.send_message(msg.from_user.id, text=start_text)
+    placeholder_text = setting.placeholder_text_fa if user.lang == 'fa' else setting.placeholder_text_en
+    await bot.send_message(msg.from_user.id, text=start_text ,reply_markup = btn.user_panel_menu(user_lang=user.lang  , placeholder=placeholder_text))
 
 
 async def support_handler(bot , msg ):
     setting  = con.setting
     user = con.get_user(msg.from_user.id)
     support_text = setting.sup_text_fa if user.lang == 'fa' else setting.sup_text_en
-    await bot.send_message(msg.from_user.id, text=support_text)
+    placeholder_text = setting.placeholder_text_fa if user.lang == 'fa' else setting.placeholder_text_en
+    await bot.send_message(msg.from_user.id, text=support_text , reply_markup = btn.user_panel_menu(user.lang , placeholder_text)) 
 
     
 async def help_handler(bot ,msg):
     setting  = con.setting
     user = con.get_user(msg.from_user.id)
     help_text = setting.help_text_fa if user.lang == 'fa' else setting.help_text_en
-    await bot.send_message(msg.from_user.id, text=help_text)
+    placeholder_text = setting.placeholder_text_fa if user.lang == 'fa' else setting.placeholder_text_en
+    await bot.send_message(msg.from_user.id, text=help_text , reply_markup = btn.user_panel_menu(user_lang=user.lang , placeholder=placeholder_text))
 
     

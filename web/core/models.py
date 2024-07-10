@@ -80,6 +80,10 @@ class SettingModel(models.Model):
     user_not_sub_en= models.TextField(default='none')
 
 
+    placeholder_text_fa = models.CharField(max_length=32 , default='ویدیو ارسال کنید ...')
+    placeholder_text_en = models.CharField(max_length=32 , default='Send Video ...')
+
+
     quality_1 = models.IntegerField(
         validators=[
             MinValueValidator(100),

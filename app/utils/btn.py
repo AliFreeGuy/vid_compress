@@ -3,6 +3,35 @@ import config
 
 
 
+
+
+
+
+
+def user_panel_menu(user_lang  , placeholder):
+    setting_text = '⚙️ setting' if user_lang== 'en' else '⚙️ تنظیمات'
+    help_text = '🆘 help' if user_lang == 'en' else '🆘 راهنما'
+    support_text = '🧑‍✈️ support' if user_lang == 'en' else '🧑‍✈️ پشتیبانی'
+    profile_text = '🎫 profile' if user_lang == 'en' else '🎫 پروفایل'
+    plans_text = '🎖 plans' if user_lang == 'en' else '🎖 اشتراک'
+
+    marks = [
+                    [setting_text , profile_text],
+                    [support_text,help_text,plans_text]
+            ]
+    return ReplyKeyboardMarkup(marks , resize_keyboard=True , placeholder=placeholder)
+
+
+
+
+
+
+
+
+
+
+
+
 def admin_inline_query(sub_code):
     reply_markup=InlineKeyboardMarkup(
                     [

@@ -10,6 +10,15 @@ def sub_not_found(user_lang ):
         return 'No subscription found with this code :('
     
 
+
+def changed_lang(user_lang ):
+    if user_lang == 'fa' : 
+        return 'زبان شما به فارسی تغییر کرد !'
+    else :
+        return 'Your language has changed to English !'
+
+
+
  
 def user_sub_activated(user_lang):
     if user_lang == 'fa' : 
