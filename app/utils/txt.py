@@ -1,6 +1,6 @@
 
 
-
+place_join_channel = f'لطفا ابتدا عضو کانال شوید !'
 
 def sub_not_found(user_lang ):
 
@@ -9,7 +9,6 @@ def sub_not_found(user_lang ):
     else :
         return 'No subscription found with this code :('
     
-
 
  
 def user_sub_activated(user_lang):

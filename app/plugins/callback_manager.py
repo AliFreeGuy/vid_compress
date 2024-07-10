@@ -3,22 +3,42 @@ from utils import logger
 from utils import cache
 from utils.connection import connection as con
 from utils import filters as f 
-from utils import btn
+from utils import btn , txt
+
+from utils.utils import alert
 
 
 
 
-
+@Client.on_callback_query(f.user_not_join & f.updater , group=0)
+async def call_user_not_join(bot ,call ):
+    await alert(bot , call , msg=txt.place_join_channel)
 
 
 
 @Client.on_callback_query(f.user_is_join & f.updater , group=0)
 async def callback_manager(bot, call):
+    
 
     status = call.data.split(':')
 
     if status[0] == 'setting' : 
         await setting_handler(bot , call )
+    
+    elif status[0] == 'joined' :
+        await user_joined(bot , call )
+
+
+async def user_joined(bot , call ):
+    await bot.delete_messages(
+    chat_id=call.from_user.id,
+    message_ids=call.message.id
+)   
+    setting  = con.setting
+    user = con.get_user(call.from_user.id)
+    start_text = setting.start_text_fa if user.lang == 'fa' else setting.start_text_en
+    await bot.send_message(call.from_user.id, text=start_text)
+
 
 
 
