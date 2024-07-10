@@ -73,8 +73,8 @@ class SettingModel(models.Model):
     setting_text_en = models.TextField()
 
 
-    placeholder_text_fa = models.CharField(max_length=128)
-    placeholder_text_en = models.CharField(max_length=128)
+    vid_editor_text_fa = models.TextField(default='خالی')
+    vid_editor_text_fa = models.TextField(default='none')
 
 
     quality_1 = models.IntegerField(
