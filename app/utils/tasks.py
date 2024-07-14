@@ -11,6 +11,7 @@ import os
 
 parent_dir = dirname(dirname(abspath(__file__)))
 sys.path.insert(0, parent_dir)
+
 import config
 from utils import cache
 from config import REDIS_DB, REDIS_HOST, REDIS_PORT
@@ -33,8 +34,14 @@ app.conf.update(
 
 @app.task(name='tasks.editor', bind=True, default_retry_delay=1)
 def editor(self , data ):
-    print(data)
+    
+    if config.DEBUG == 'True':bot = Client('editor' , api_hash=config.API_HASH , api_id=config.API_ID , session_string=config.SESSION_STRING , proxy = config.PROXY)
+    else :bot = Client('editor' , api_hash=config.API_HASH , api_id=config.API_ID , session_string=config.SESSION_STRING )
+    
 
+
+    with bot :
+        bot.send_message(config.ADMIN , 'hi user ')
 
 
 

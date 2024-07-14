@@ -29,7 +29,7 @@ async def updater(_ , cli , msg ):
             con.add_sub(chat_id=msg.from_user.id , plan_tag='free')
             
     except Exception as e :
-         logger.error(e)
+         logger.warning(e)
          
     return True
 
