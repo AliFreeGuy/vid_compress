@@ -4,10 +4,10 @@ from utils import cache
 from utils.connection import connection as con
 from utils import filters as f 
 from utils import btn , txt
-
 from utils.utils import alert
-
-
+from celery.result import AsyncResult
+from utils.tasks import app 
+from flower.utils.broker import Broker
 
 
 @Client.on_callback_query(f.user_not_join & f.updater , group=0)
@@ -27,6 +27,61 @@ async def callback_manager(bot, call):
     
     elif status[0] == 'joined' :
         await user_joined(bot , call )
+
+    elif status[0] == 'status-editor' :
+        await status_editor(bot , call )
+    
+    elif status[0] == 'cancel-editor' : 
+        await cancel_editor(bot , call )
+
+
+
+
+
+
+
+async def status_editor(bot , call ):
+
+    user = con.get_user(call.from_user.id)
+    vid_data = cache.redis.hgetall(call.data.replace('status-editor:' , ''))
+    task_id = vid_data['task_id']
+    
+    broker = Broker(
+        app.connection(connect_timeout=1.0).as_uri(include_password=True),
+        broker_options=app.conf.broker_transport_options,
+        broker_use_ssl=app.conf.broker_use_ssl,
+    )
+    async def queue_length():
+        queues = await broker.queues(["celery"])
+        print(queues)
+        return queues[0].get("messages")
+    
+
+    await alert(bot , call , msg =txt.task_status(user_lang=user.lang , task_count=await queue_length()))
+    
+    
+
+    
+  
+
+
+
+
+async def cancel_editor(bot , call ):
+    try :
+        vid_data = cache.redis.hgetall(call.data.replace('cancel-editor:' , ''))
+        task_id = vid_data['task_id']
+        task = AsyncResult(task_id)
+        task.revoke(terminate=True)
+        await alert(bot  ,call , msg= 'عملیات با موفقیت کنسل شد')
+        await bot.delete_messages(call.from_user.id , call.message.id)
+    except Exception as e :
+        logger.error(e)
+
+
+
+
+
 
 
 async def user_joined(bot , call ):

@@ -93,6 +93,44 @@ class SettingAPIView(APIView):
     
 
 
+class UserSubUpdate(APIView):
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [permissions.IsAuthenticated]
+
+    def post(self, request):
+        chat_id = int(request.data.get('chat_id'))
+        volume = float(request.data.get('volume'))
+        user = User.objects.filter(chat_id=chat_id)
+
+        if user.exists():
+            user = user.first()
+            user_plan = user.plans.filter(is_active=True).first()
+
+            if user_plan:
+                if volume > 0:
+                    user_plan.volume += volume
+                    user_plan.save()
+                    user_serializer = serializers.UserSerializer(user)
+                    return JsonResponse(user_serializer.data , status = status.HTTP_200_OK)
+                
+                elif volume < 0:
+                    if user_plan.volume + volume < 0:
+                        return JsonResponse({'status': 'error', 'message': 'Insufficient volume'} , status = status.HTTP_304_NOT_MODIFIED)
+                    else:
+                        user_plan.volume += volume
+                        user_plan.save()
+                        user_serializer = serializers.UserSerializer(user)
+                        return JsonResponse(user_serializer.data)
+                
+            else:
+                return JsonResponse({'status': 'error', 'message': 'No active plan found'} , status.HTTP_304_NOT_MODIFIED)
+
+        return JsonResponse({'status': 'error', 'message': 'user not found'} , status.HTTP_304_NOT_MODIFIED)
+
+
+
+
+
 
 
 class PlansAPIView(APIView):

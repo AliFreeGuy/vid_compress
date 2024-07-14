@@ -74,7 +74,7 @@ class SettingModel(models.Model):
 
 
     vid_editor_text_fa = models.TextField(default='خالی')
-    vid_editor_text_fa = models.TextField(default='none')
+    vid_editor_text_en = models.TextField(default='none')
 
     user_not_sub_fa= models.TextField(default='خالی')
     user_not_sub_en= models.TextField(default='none')

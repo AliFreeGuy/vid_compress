@@ -7,6 +7,39 @@ import config
 
 
 
+def video_quality(user_lang , quality ):
+
+    ...
+
+
+
+
+
+
+
+
+
+
+def vid_editor_btn(vid_data , user_lang  ):
+    
+    buttons = []
+    if user_lang == 'en'  : 
+        buttons.append([
+            InlineKeyboardButton(text='❌ Cancel',callback_data=f'cancel-editor:{vid_data}'),
+            InlineKeyboardButton(text='♻️ Status',callback_data=f'status-editor:{vid_data}') , 
+                        ])
+        
+    elif user_lang == 'fa' : 
+        buttons.append([
+            InlineKeyboardButton(text='❌ کنسل',callback_data=f'cancel-editor:{vid_data}'),
+            InlineKeyboardButton(text='♻️ وضعیت',callback_data=f'status-editor:{vid_data}') ,
+                        ])
+    return InlineKeyboardMarkup(buttons)
+
+
+
+
+
 
 def user_panel_menu(user_lang  , placeholder):
     setting_text = '⚙️ setting' if user_lang== 'en' else '⚙️ تنظیمات'

@@ -10,6 +10,12 @@ def sub_not_found(user_lang ):
         return 'No subscription found with this code :('
     
 
+def task_status(user_lang  , task_count):
+    if user_lang == 'fa' :return f'ویدیو های در صف انتظار {str(task_count)} لطفا صبور باشید'
+    else :return f'Queued videos {str(task_count)} Please wait'
+
+
+
 
 def changed_lang(user_lang ):
     if user_lang == 'fa' : 

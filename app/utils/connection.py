@@ -132,6 +132,15 @@ class VidConnec:
              return True
         return False
          
+        
+    def update_sub(self , chat_id , volume ):
+         pattern = 'update_sub'
+         url = self.link_generator(pattern)
+         data = {'chat_id' : chat_id , 'volume' : volume}
+         res  = self.post(url=url , chat_id=chat_id , data=data)
+         if res.status_code == 200 :
+            return Response(res.json())
+         return False
          
     def get_user(self , chat_id):
             pattern  = 'user_update'

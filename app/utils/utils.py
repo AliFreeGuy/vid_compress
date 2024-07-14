@@ -12,6 +12,12 @@ import uuid
 
 
 
+def b_to_mb(data):
+    file_size_in_megabytes = data / (1024 * 1024)
+    file_size = (f"{file_size_in_megabytes:.2f}")
+    return float(file_size)
+
+
 
 def random_code():
     return uuid.uuid4()

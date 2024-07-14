@@ -1,159 +1,48 @@
-# import redis
-# import time
-# import json
-# import requests
+# @app.task(bind=True)
+# def process_job(self, job_id):
+#     """
+#     takes filename as argument and scans it and returns result.
+#     """
+#     ...
+#     # task progres state
+#     progress = 0
+#     print 'generating input'
+#     with file as csvfile:
+#         total = sum(1 for row in csvfile)
+#         emailreader = csv.reader(csvfile)
+#         for email in emailreader:
+#             ...
+
+#             # update task progress
+#             progress = progress + 1
+#             percentage = int((progress * 100) / float(total))
+#             self.update_state(state='PROGRESS', meta={'progress': percentage, 'scanned': progress})
+#             print 'percentage ', percentage
+#             print result
+
+#     # write files
+#     ...
+#     return result_count_data
 
 
+# class ProgressView(APIView):
+#     """
+#     return progress of job id task
+#     """
 
+#     def get(self, request, *args, **kwargs):
+#         # wait for first time
+#         time.sleep(1)
+#         # get task id from AsyncResult returned when you call task_name.delay()
+#         task_id = request.query_params.get('task_id')
+#         task = process_job.AsyncResult(task_id)
+#         progress = 0
+#         if task.status == 'SUCCESS':
+#             progress = 100
+#         elif task.status == 'FAILURE':
+#             progress = 0
+#         elif task.status == 'PROGRESS':
+#             progress = task.info.get('progress')  # needs to be set by task
 
-# REDIS_HOST = 'localhost'
-# REDIS_PORT = 6379
-# REDIS_DB = 0
-
-# API_URL = 'http://127.0.0.1:8000'
-# API_KEY = 'cc0d34e0e210208c9811a398dcd081d48bb74b4d'
-# BOT_USERNAME = 'showbluebot'
-# CACHE_TTL = 1
-
-
-# class VidConnec:
-#     def __init__(self , api_key , url , bot_username) -> None:
-#         self.api_key = api_key
-#         self.url = url
-#         self.username = bot_username
-#         self.headers = {'Authorization' : f'token {self.api_key}'}
-#         self.redis_client = redis.Redis(host=REDIS_HOST, port=REDIS_PORT, db=REDIS_DB) 
-
-            
-
-
-#     @property
-#     def setting(self):
-#             last_request_time = self.redis_client.get('last_request_time')  
-#             current_time = time.time()
-#             if last_request_time is None or current_time - float(last_request_time) > CACHE_TTL:
-#                 pattern = 'setting'
-#                 url = self.link_generator(pattern=pattern)
-#                 res = self.get(url)
-#                 if res and res.status_code == 200:
-#                     res_data = res.json()
-#                     self.redis_client.set('setting_data', json.dumps(res_data))
-#                     self.redis_client.set('last_request_time', current_time)
-#                     return Response(res.json())
-#             else:
-#                 return Response(json.loads(self.redis_client.get('setting_data')))
-        
-
-    
-#     @property
-#     def plans(self):
-#             last_request_time = self.redis_client.get('last_plans_request_time')  
-#             current_time = time.time()
-#             if last_request_time is None or current_time - float(last_request_time) > CACHE_TTL:
-#                 pattern = 'plans'
-#                 url = self.link_generator(pattern=pattern)
-#                 res = self.get(url)
-#                 if res and res.status_code == 200:
-#                     res_data = res.json()
-#                     self.redis_client.set('plans_data', json.dumps(res_data))
-#                     self.redis_client.set('last_plans_request_time', current_time)
-#                     return res_data
-#             else:
-#                 return json.loads(self.redis_client.get('plans_data'))
-        
-
-
-#     def user(self, chat_id , full_name , lang = None  , quality = None  ,):
-#             password = str(hash(chat_id))
-#             last_request_time = self.redis_client.get(f'last_user_request_time:{str(chat_id)}')  
-#             current_time = time.time()
-#             if last_request_time is None or current_time - float(last_request_time) > CACHE_TTL:
-
-#                 pattern  = 'user_update'
-#                 data = {}  
-#                 url = self.link_generator(pattern)
-#                 data['url'] = url
-#                 data['chat_id']  = chat_id
-#                 data['full_name']= full_name
-#                 data['password']  = password
-#                 if lang : data['lang'] = lang
-#                 if quality : data['quality'] = quality
-                
-                
-
-#                 res = self.post(url = url , chat_id = chat_id , data = data)
-#                 res_raw = res
-#                 if res and res.status_code == 200 :
-#                     res = Response(res.json())
-#                     self.redis_client.set(f'user_data:{str(chat_id)}', json.dumps(res_raw.json()))
-#                     self.redis_client.set(f'last_user_request_time:{str(chat_id)}', current_time)
-#                     return res
-#             else :
-#                 return Response(json.loads(self.redis_client.get(f'user_data:{str(chat_id)}')))
-#             return None 
-        
-    
-#     def get_user(self , chat_id):
-#             pattern  = 'user_update'
-#             url = self.link_generator(pattern)
-#             res = self.post(url , chat_id )
-#             if res and res.status_code == 200 :
-#                 res = Response(res.json())
-#                 return res
-#             return None  
-        
-    
-
-
-#     def link_generator(self  , pattern = None):
-#             if pattern is not None :
-#                 end_point = self.url.rstrip('/') + f'/api/{pattern}/'
-#                 return end_point
-#             return None
-        
-
-
-#     def get(self , url):
-#             res = requests.get(url , headers=self.headers)
-#             return res
-
-    
-
-#     def post(self ,url , chat_id , data = None    ):
-#             if data != None :
-
-#                     res = requests.post(url , headers=self.headers , data  = data )
-#                     return res
-#             else :
-#                 res = requests.post(url , headers=self.headers , data = {'chat_id' : chat_id })
-#                 return res
-
-
-
-
-# class Response:
-    
-#     def __init__(self, data):
-#             self.data = data
-#             if type(data) is dict:
-#                 for key, value in data.items():
-#                     if isinstance(value, dict):
-#                         setattr(self, key, Response(value))
-#                     else:
-#                         setattr(self, key, value)
-        
-
-#     def __str__(self) -> str:
-#             return str(self.data) 
-        
-
-#     def __getattr__(self, attr):
-#             raise AttributeError(f"'{type(self).__name__}' object has no attribute '{attr}'")
-        
-
-
-
-# connection = VidConnec(api_key=API_KEY , url=API_URL , bot_username=BOT_USERNAME)
-
-# print(connection.user(chat_id=44426  , full_name='alireza' , lang='fa' , quality='q2'))
-# # print(connection.get_user(44426))
+#         return Response({'progress': progress, 'task_status': task.status},
+#                         status=status.HTTP_200_OK)
