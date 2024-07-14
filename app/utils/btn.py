@@ -7,10 +7,33 @@ import config
 
 
 
-def video_quality(user_lang , quality ):
+def vid_editor_quality(user_lang , vid_key ):
 
-    ...
+    buttons = []
+    if user_lang == 'fa' : 
+        q1= 'کیفیت خوب'
+        q2='کیفیت متوسط'
+        q3= 'کیفیت کم'
+        quality_btn = [
+            InlineKeyboardButton(text=q1,callback_data=f'editor_q1:{vid_key}'),
+            InlineKeyboardButton(text=q2,callback_data=f'editor_q2:{vid_key}'),
+            InlineKeyboardButton(text=q3,callback_data=f'editor_q3:{vid_key}'),
+            ] 
+        buttons.append(quality_btn)
+    
 
+    elif user_lang == 'en' : 
+        q1= 'good quality'
+        q2=  'mid quality'
+        q3= 'low quality'
+        quality_btn = [
+            InlineKeyboardButton(text=q1,callback_data=f'editor_q1:{vid_key}'),
+            InlineKeyboardButton(text=q2,callback_data=f'editor_q2:{vid_key}'),
+            InlineKeyboardButton(text=q3,callback_data=f'editor_q3:{vid_key}'),
+            ] 
+        buttons.append(quality_btn)
+    
+    return InlineKeyboardMarkup(buttons)
 
 
 

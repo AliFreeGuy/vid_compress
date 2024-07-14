@@ -33,7 +33,6 @@ app.conf.update(
 
 @app.task(name='tasks.editor', bind=True, default_retry_delay=1)
 def editor(self , data ):
-    time.sleep(120)
     print(data)
 
 

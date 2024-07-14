@@ -8,6 +8,7 @@ from utils.utils import alert
 from celery.result import AsyncResult
 from utils.tasks import app 
 from flower.utils.broker import Broker
+from utils.tasks import editor
 
 
 @Client.on_callback_query(f.user_not_join & f.updater , group=0)
@@ -19,6 +20,7 @@ async def call_user_not_join(bot ,call ):
 @Client.on_callback_query(f.user_is_join & f.updater , group=0)
 async def callback_manager(bot, call):
     
+    logger.info(f'{call.from_user.first_name} - {call.from_user.id} - {call.data}')
 
     status = call.data.split(':')
 
@@ -33,10 +35,39 @@ async def callback_manager(bot, call):
     
     elif status[0] == 'cancel-editor' : 
         await cancel_editor(bot , call )
+    
+    elif status[0].startswith('editor_q'):
+        await set_editor_quality(bot ,call  )
 
 
 
 
+
+
+async def set_editor_quality(bot , call ):
+    user = con.get_user(call.from_user.id )
+    setting = con.setting
+    vid_key = f'vid_data:{call.data.split(":")[2]}'
+    vid_data = cache.redis.hgetall(vid_key)
+    if vid_data :
+        cache.redis.hset(vid_key , 'quality'  , call.data.split(':')[0].replace('editor_' , ''))
+        data = cache.redis.hgetall(vid_key)
+        
+        data['quality'] = call.data.split(':')[0].replace('editor_' , '')
+        data = cache.redis.hgetall(vid_key)
+        data['task_id'] = 'none'
+
+        task = editor.delay(data)
+        data['task_id'] = task.id
+        try :
+                vid_editor_text = setting.vid_editor_text_fa if user.lang == 'fa' else setting.vid_editor_text_en
+                await bot.edit_message_text(chat_id = call.from_user.id ,
+                                            text = vid_editor_text ,
+                                            message_id  = call.message.id,
+                                            reply_markup = btn.vid_editor_btn(vid_data =vid_key , user_lang=user.lang))
+        except Exception as e :
+            logger.warning(e)
+        
 
 
 

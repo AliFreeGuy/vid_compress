@@ -44,17 +44,29 @@ async def editor_manager(bot ,msg ):
 
         if update_sub : 
             if update_sub.quality != '' :
-                task = editor.delay(data)
                 data['quality'] = update_sub.quality
+                random_code = str(random.randint(9999 , 999999))
+                data['id']  = random_code
+                vid_data_key = f'vid_data:{random_code}'
+                data['task_id'] = 'none'
+                task = editor.delay(data)
                 data['task_id'] = task.id
-                vid_data_key = f'vid_data:{str(random.randint(9999 , 999999))}'
                 cache.redis.hmset(vid_data_key , data)
                 vid_editor_text = setting.vid_editor_text_fa if user.lang == 'fa' else setting.vid_editor_text_en
                 await msg.reply_text(vid_editor_text, quote=True , reply_markup  =btn.vid_editor_btn(vid_data =vid_data_key , user_lang=user.lang))
-
+                print(data)
 
             else :
-                ...
+        
+                data['quality'] = 'none' 
+                data['task_id'] = 'none'
+                random_code = str(random.randint(9999 , 999999))
+                data['id']  = random_code
+                vid_data_key = f'vid_data:{random_code}'
+                cache.redis.hmset(vid_data_key , data)
+                vid_editor_text = setting.vid_editor_text_fa if user.lang == 'fa' else setting.vid_editor_text_en
+                await msg.reply_text(vid_editor_text, quote=True , reply_markup  =btn.vid_editor_quality(vid_key =vid_data_key , user_lang=user.lang))
+                print(data)
 
 
     
