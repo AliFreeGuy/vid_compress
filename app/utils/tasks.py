@@ -114,11 +114,27 @@ def editor(self , data ):
 
 
     with bot :
+
+        setting = con.setting
+
         def progress(current, total):
-            print(f"{current * 100 / total:.1f}%")
-        video_data = bot.send_video(chat_id=int(data['chat_id']) ,video=video_name , reply_to_message_id=int(data['bot_msg_id']) , progress=progress )
+            pdata = int(float(f"{current * 100 / total:.1f}"))
+            progress = progressbar(pdata +300 , 402 , str(self.request.id) )
+            if progress['is_update'] == 'True' :
+                pbar = progress['text']
+                vid_editor_text = setting.vid_editor_text_fa if data['user_lang'] == 'fa' else setting.vid_editor_text_en
+                text = f'{vid_editor_text}\n\n📥{str(pbar)}'
+                msg_id = int(data['bot_msg_id'])+1
+                bot.edit_message_text(chat_id=int(data['chat_id']) ,text = text ,message_id = msg_id ,
+                reply_markup=cancel_markup(user_lang=data["user_lang"] , callback_data=f'cancel-editor:vid_data:{str(data["id"])}'))
+        bot.send_video(int(data['chat_id'])  , video_name, progress=progress ) 
         bot.delete_messages(int(data["chat_id"]), int(data['bot_msg_id'])+1)
-        cache.redis.hset(f'vid_data:{data["id"]}' , 'file_id'  , str(video_data.video.file_id))
+
+
+
+        # video_data = bot.send_video(chat_id=int(data['chat_id']) ,video=video_name , reply_to_message_id=int(data['bot_msg_id']) , progress=progress )
+        # bot.delete_messages(int(data["chat_id"]), int(data['bot_msg_id'])+1)
+        # cache.redis.hset(f'vid_data:{data["id"]}' , 'file_id'  , str(video_data.video.file_id))
     
 
 
