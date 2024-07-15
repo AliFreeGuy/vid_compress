@@ -119,32 +119,16 @@ def editor(self , data ):
 
 
 
-
-
-
-
-
-
-
-
     
     with bot :
 
-            cmd = [
-                "ffmpeg",
-                "-i", video_name,
-            ]
-
-            
-          
+            cmd = ["ffmpeg", "-i", video_name,]
             cmd.extend(["-filter_complex", f"drawtext=text='{setting.watermark_text}':fontsize=30:fontcolor=yellow:x=(main_w-text_w-10):y=(main_h-text_h-10)"])
-
             cmd.extend([
                 "-r", "15",
                 "-b:v", f"500k",
                 "-b:a", "64k",
-                f'{file_path}/output.mp4'
-            ])
+                f'{file_path}/output.mp4'])
 
             ff = FfmpegProgress(cmd)
             for progress in ff.run_command_with_progress():
@@ -160,27 +144,6 @@ def editor(self , data ):
                         reply_markup=cancel_markup(user_lang=data["user_lang"] , callback_data=f'cancel-editor:vid_data:{str(data["id"])}'))
                     except Exception as e :
                          logger.warning(e)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
