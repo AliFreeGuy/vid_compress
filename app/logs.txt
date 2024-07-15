@@ -9122,3 +9122,44 @@ requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8
 [1;92mINFO [2024-07-15 10:41:06 - callback_manager.py:23] - Alireza - 5522477996 - status-editor:vid_data:460792[0m
 [1;93mWARNING [2024-07-15 10:41:31 - filters.py:32] - 'NoneType' object has no attribute 'replace'[0m
 [1;92mINFO [2024-07-15 10:41:37 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-15 11:33:24 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-15 11:33:24 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-15 11:33:25 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-15 11:33:25 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-15 11:33:26 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-15 11:33:26 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-15 11:33:27 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-15 11:33:27 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-15 11:33:27 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-15 11:33:27 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-15 11:33:27 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-15 11:33:28 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-15 11:33:28 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-15 11:33:29 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-15 11:33:29 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-15 11:33:30 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-15 11:33:30 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-15 11:33:30 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-15 11:33:30 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-15 11:33:30 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-15 11:33:31 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-15 11:33:31 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-15 11:33:31 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-15 11:33:32 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-15 11:33:32 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-15 11:33:32 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-15 11:33:32 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-15 11:33:32 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-15 11:33:32 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-15 11:33:33 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-15 11:33:33 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-15 11:33:33 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-15 11:33:33 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-15 11:33:33 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-15 11:33:33 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-15 11:33:33 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;93mWARNING [2024-07-15 11:34:16 - filters.py:32] - 'NoneType' object has no attribute 'replace'[0m
+[1;92mINFO [2024-07-15 11:37:28 - callback_manager.py:23] - Alireza - 5522477996 - cancel-editor:vid_data:248005[0m
+[1;93mWARNING [2024-07-15 11:37:52 - filters.py:32] - 'NoneType' object has no attribute 'replace'[0m
+[1;93mWARNING [2024-07-15 11:38:45 - filters.py:32] - 'NoneType' object has no attribute 'replace'[0m
+[1;93mWARNING [2024-07-15 11:40:07 - filters.py:32] - 'NoneType' object has no attribute 'replace'[0m
