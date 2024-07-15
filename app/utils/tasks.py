@@ -3,6 +3,7 @@ from celery.schedules import crontab
 import redis
 from os.path import abspath, dirname
 import sys
+from ffmpeg_progress_yield import FfmpegProgress
 from pyrogram.types import (ReplyKeyboardMarkup, InlineKeyboardMarkup,InlineKeyboardButton , KeyboardButton)
 from datetime import datetime
 import requests
@@ -16,7 +17,7 @@ parent_dir = dirname(dirname(abspath(__file__)))
 sys.path.insert(0, parent_dir)
 
 import config
-from utils import cache
+from utils import cache , logger
 from utils.connection import connection as con
 from config import REDIS_DB, REDIS_HOST, REDIS_PORT
 
@@ -82,6 +83,7 @@ def editor(self , data ):
 
     video_name = f'{file_path}/{random.randint(999 , 999999)}.mp4'
     thumb_name = f'{file_path}/{random.randint(999 , 999999)}.jpeg'
+    setting = con.setting
 
     
 
@@ -93,8 +95,6 @@ def editor(self , data ):
     with bot : 
         cache.redis.hset(f'vid_data:{data["id"]}' , 'file_path'  , str(file_path))
         message = bot.get_messages(config.BACKUP, int(data['backup_msg_id']))
-        setting = con.setting
-
         def progress(current, total):
                     pdata = int(float(f"{current * 100 / total:.1f}"))
                     progress = progressbar(pdata , 400 , str(self.request.id) )
@@ -103,9 +103,10 @@ def editor(self , data ):
                         vid_editor_text = setting.vid_editor_text_fa if data['user_lang'] == 'fa' else setting.vid_editor_text_en
                         text = f'{vid_editor_text}\n\n📥{str(pbar)}'
                         msg_id = int(data['bot_msg_id'])+1
-                        bot.edit_message_text(chat_id=int(data['chat_id']) ,text = text ,message_id = msg_id ,
-                     reply_markup=cancel_markup(user_lang=data["user_lang"] , callback_data=f'cancel-editor:vid_data:{str(data["id"])}'))
-                    
+                        try :
+                            bot.edit_message_text(chat_id=int(data['chat_id']) ,text = text ,message_id = msg_id ,
+                        reply_markup=cancel_markup(user_lang=data["user_lang"] , callback_data=f'cancel-editor:vid_data:{str(data["id"])}'))
+                        except Exception as e :logger.warning(e)
         bot.download_media(message, progress=progress , file_name=video_name)
 
 
@@ -113,10 +114,83 @@ def editor(self , data ):
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     with bot :
 
-        setting = con.setting
+            cmd = [
+                "ffmpeg",
+                "-i", video_name,
+            ]
 
+            
+          
+            cmd.extend(["-filter_complex", f"drawtext=text='{setting.watermark_text}':fontsize=30:fontcolor=yellow:x=(main_w-text_w-10):y=(main_h-text_h-10)"])
+
+            cmd.extend([
+                "-r", "15",
+                "-b:v", f"500k",
+                "-b:a", "64k",
+                f'{file_path}/output.mp4'
+            ])
+
+            ff = FfmpegProgress(cmd)
+            for progress in ff.run_command_with_progress():
+                pdata = int(str(progress).split('.')[0])
+                pbar = progressbar(pdata *2 +100 , 400 , str(self.request.id))
+                pbar_text= pbar['text']
+                if pbar['is_update'] == 'True':
+                    vid_editor_text = setting.vid_editor_text_fa if data['user_lang'] == 'fa' else setting.vid_editor_text_en
+                    text = f'{vid_editor_text}\n\n📥{str(pbar_text)}'
+                    msg_id = int(data['bot_msg_id'])+1
+                    try :
+                        bot.edit_message_text(chat_id=int(data['chat_id']) ,text = text ,message_id = msg_id ,
+                        reply_markup=cancel_markup(user_lang=data["user_lang"] , callback_data=f'cancel-editor:vid_data:{str(data["id"])}'))
+                    except Exception as e :
+                         logger.warning(e)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    with bot :
         def progress(current, total):
             pdata = int(float(f"{current * 100 / total:.1f}"))
             progress = progressbar(pdata +300 , 402 , str(self.request.id) )
@@ -125,23 +199,16 @@ def editor(self , data ):
                 vid_editor_text = setting.vid_editor_text_fa if data['user_lang'] == 'fa' else setting.vid_editor_text_en
                 text = f'{vid_editor_text}\n\n📥{str(pbar)}'
                 msg_id = int(data['bot_msg_id'])+1
-                bot.edit_message_text(chat_id=int(data['chat_id']) ,text = text ,message_id = msg_id ,
-                reply_markup=cancel_markup(user_lang=data["user_lang"] , callback_data=f'cancel-editor:vid_data:{str(data["id"])}'))
-        bot.send_video(int(data['chat_id'])  , video_name, progress=progress ) 
+                try :
+                    bot.edit_message_text(chat_id=int(data['chat_id']) ,text = text ,message_id = msg_id ,
+                    reply_markup=cancel_markup(user_lang=data["user_lang"] , callback_data=f'cancel-editor:vid_data:{str(data["id"])}'))
+                except Exception as e :logger.warning(e)
+        bot.send_video(int(data['chat_id'])  , video=f'{file_path}/output.mp4', progress=progress ) 
         bot.delete_messages(int(data["chat_id"]), int(data['bot_msg_id'])+1)
 
 
 
-        # video_data = bot.send_video(chat_id=int(data['chat_id']) ,video=video_name , reply_to_message_id=int(data['bot_msg_id']) , progress=progress )
-        # bot.delete_messages(int(data["chat_id"]), int(data['bot_msg_id'])+1)
-        # cache.redis.hset(f'vid_data:{data["id"]}' , 'file_id'  , str(video_data.video.file_id))
-    
-
-
-
-    
-
-
+   
 
 
 
