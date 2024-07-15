@@ -7,6 +7,7 @@ import jdatetime
 import datetime
 from .logger import logger
 import jdatetime
+import os
 import uuid
 
 
@@ -18,6 +19,8 @@ def b_to_mb(data):
     return float(file_size)
 
 
+def delet_dir(path):
+        os.system(f"rm -rf {path}")
 
 def random_code():
     return uuid.uuid4()

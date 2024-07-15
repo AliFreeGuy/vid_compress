@@ -9163,3 +9163,31 @@ requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8
 [1;93mWARNING [2024-07-15 11:37:52 - filters.py:32] - 'NoneType' object has no attribute 'replace'[0m
 [1;93mWARNING [2024-07-15 11:38:45 - filters.py:32] - 'NoneType' object has no attribute 'replace'[0m
 [1;93mWARNING [2024-07-15 11:40:07 - filters.py:32] - 'NoneType' object has no attribute 'replace'[0m
+[1;92mINFO [2024-07-15 11:47:33 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-15 11:47:35 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-15 11:47:35 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-15 11:47:35 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-15 11:47:36 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-15 11:47:36 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-15 11:47:36 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-15 11:47:36 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-15 11:47:36 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-15 11:47:36 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-15 11:47:37 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-15 11:47:37 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-15 11:47:37 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-15 11:47:37 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-15 11:47:37 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-15 11:47:37 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-15 11:47:37 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-15 11:47:50 - callback_manager.py:23] - Alireza - 5522477996 - status-editor:vid_data:323550[0m
+[1;92mINFO [2024-07-15 11:48:46 - callback_manager.py:23] - Alireza - 5522477996 - cancel-editor:vid_data:323550[0m
+[1;93mWARNING [2024-07-15 11:49:08 - filters.py:32] - 'NoneType' object has no attribute 'replace'[0m
+[1;92mINFO [2024-07-15 11:50:02 - callback_manager.py:23] - Alireza - 5522477996 - status-editor:vid_data:299822[0m
+[1;93mWARNING [2024-07-15 11:50:16 - filters.py:32] - 'NoneType' object has no attribute 'replace'[0m
+[1;92mINFO [2024-07-15 11:52:48 - callback_manager.py:23] - Alireza - 5522477996 - cancel-editor:vid_data:35002[0m
+[1;92mINFO [2024-07-15 11:55:08 - callback_manager.py:23] - Alireza - 5522477996 - cancel-editor:vid_data:715130[0m
+[1;93mWARNING [2024-07-15 11:56:19 - filters.py:32] - 'NoneType' object has no attribute 'replace'[0m
+[1;92mINFO [2024-07-15 11:56:25 - callback_manager.py:23] - Alireza - 5522477996 - setting:quality_q2[0m
+[1;92mINFO [2024-07-15 11:56:34 - callback_manager.py:23] - Alireza - 5522477996 - editor_q3:vid_data:580440[0m
+[1;93mWARNING [2024-07-15 11:56:54 - filters.py:32] - 'NoneType' object has no attribute 'replace'[0m

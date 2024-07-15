@@ -17,7 +17,7 @@ parent_dir = dirname(dirname(abspath(__file__)))
 sys.path.insert(0, parent_dir)
 
 import config
-from utils import cache , logger
+from utils import cache , logger , utils
 from utils.connection import connection as con
 from config import REDIS_DB, REDIS_HOST, REDIS_PORT
 
@@ -85,8 +85,6 @@ def editor(self , data ):
     thumb_name = f'{file_path}/{random.randint(999 , 999999)}.jpeg'
     setting = con.setting
 
-    
-
 
     if config.DEBUG == 'True':bot = Client('editor' , api_hash=config.API_HASH , api_id=config.API_ID , session_string=config.SESSION_STRING , proxy = config.PROXY)
     else :bot = Client('editor' , api_hash=config.API_HASH , api_id=config.API_ID , session_string=config.SESSION_STRING )
@@ -121,12 +119,15 @@ def editor(self , data ):
 
     
     with bot :
+            
+            quality = f'quality_{data["quality"].replace("q" , "")}'
+            print(quality)
 
             cmd = ["ffmpeg", "-i", video_name,]
             cmd.extend(["-filter_complex", f"drawtext=text='{setting.watermark_text}':fontsize=30:fontcolor=yellow:x=(main_w-text_w-10):y=(main_h-text_h-10)"])
             cmd.extend([
                 "-r", "15",
-                "-b:v", f"500k",
+                "-b:v", f"{getattr(setting , quality)}k",
                 "-b:a", "64k",
                 f'{file_path}/output.mp4'])
 
@@ -144,6 +145,8 @@ def editor(self , data ):
                         reply_markup=cancel_markup(user_lang=data["user_lang"] , callback_data=f'cancel-editor:vid_data:{str(data["id"])}'))
                     except Exception as e :
                          logger.warning(e)
+
+
 
 
 
@@ -171,8 +174,7 @@ def editor(self , data ):
 
 
 
-   
-
+    utils.delet_dir(file_path)
 
 
 
