@@ -12,16 +12,16 @@ import random
 
 @Client.on_message(filters.private &f.user_is_join &filters.video , group=2)
 async def video_editor_handler(bot, msg):
+    if msg.from_user.id == msg.chat.id :
+        user = con.get_user(chat_id=msg.from_user.id )
+        setting = con.setting
 
-    user = con.get_user(chat_id=msg.from_user.id )
-    setting = con.setting
+        if user.sub.expiry != None :
+            await editor_manager(bot , msg )
 
-    if user.sub.expiry != None :
-        await editor_manager(bot , msg )
-
-    else :
-        user_not_sub_text = setting.user_not_sub_fa if user.lang == 'fa' else setting.user_not_sub_en
-        await msg.reply_text(user_not_sub_text, quote=True)
+        else :
+            user_not_sub_text = setting.user_not_sub_fa if user.lang == 'fa' else setting.user_not_sub_en
+            await msg.reply_text(user_not_sub_text, quote=True)
 
 
 
@@ -36,7 +36,7 @@ async def editor_manager(bot ,msg ):
 
         backup_vid = await msg.copy(config.BACKUP)
         data['backup_msg_id']  =backup_vid.id
-        data['caht_id'] = msg.from_user.id 
+        data['chat_id'] = msg.from_user.id 
         data['bot_msg_id'] = msg.id
         data['file_size'] = b_to_mb(msg.video.file_size)
 
