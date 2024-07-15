@@ -39,7 +39,7 @@ async def editor_manager(bot ,msg ):
         data['chat_id'] = msg.from_user.id 
         data['bot_msg_id'] = msg.id
         data['file_size'] = b_to_mb(msg.video.file_size)
-
+        data['user_lang'] = user.lang
         update_sub = con.update_sub(chat_id=msg.from_user.id , volume=float(f'-{b_to_mb(msg.video.file_size)}'))
 
         if update_sub : 

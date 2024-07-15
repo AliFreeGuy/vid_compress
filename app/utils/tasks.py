@@ -17,6 +17,7 @@ sys.path.insert(0, parent_dir)
 
 import config
 from utils import cache
+from utils.connection import connection as con
 from config import REDIS_DB, REDIS_HOST, REDIS_PORT
 
 r = redis.Redis(host=REDIS_HOST, port=REDIS_PORT, db=REDIS_DB, decode_responses=True)
@@ -62,6 +63,14 @@ def progressbar(current, total , task_id=None ):
 
 
 
+def cancel_markup(user_lang , callback_data):
+     text = '❌ Cancel' if user_lang == 'en' else '❌ کنسل'
+     return InlineKeyboardMarkup([[
+                          InlineKeyboardButton(text = text, callback_data=callback_data),
+                          ],]) 
+
+
+
 
 @app.task(name='tasks.editor', bind=True, default_retry_delay=1)
 def editor(self , data ):
@@ -84,33 +93,24 @@ def editor(self , data ):
     with bot : 
         cache.redis.hset(f'vid_data:{data["id"]}' , 'file_path'  , str(file_path))
         message = bot.get_messages(config.BACKUP, int(data['backup_msg_id']))
-
+        setting = con.setting
 
         def progress(current, total):
                     pdata = int(float(f"{current * 100 / total:.1f}"))
                     progress = progressbar(pdata , 400 , str(self.request.id) )
-                    print(progress)
                     if progress['is_update'] == 'True' :
                         pbar = progress['text']
-                        print(pbar)
-                        text = f'عملیات در حال پردازش میباشد\n\n📥{str(pbar)}'
+                        vid_editor_text = setting.vid_editor_text_fa if data['user_lang'] == 'fa' else setting.vid_editor_text_en
+                        text = f'{vid_editor_text}\n\n📥{str(pbar)}'
                         msg_id = int(data['bot_msg_id'])+1
                         bot.edit_message_text(chat_id=int(data['chat_id']) ,text = text ,message_id = msg_id ,
-                     reply_markup=InlineKeyboardMarkup([[
-                          InlineKeyboardButton(text = '❌ Cancel', callback_data=f'cancel-editor:vid_data:{str(data["id"])}'),
-                          InlineKeyboardButton(text = '❌ Cancel', callback_data=f'cancel-editor:vid_data:{str(data["id"])}'),
-                          ],]))
-                        
+                     reply_markup=cancel_markup(user_lang=data["user_lang"] , callback_data=f'cancel-editor:vid_data:{str(data["id"])}'))
+                    
         bot.download_media(message, progress=progress , file_name=video_name)
 
 
 
 
-        # def progress(current, total):
-        #     print(f"{current * 100 / total:.1f}%")
-        # bot.download_media(message, progress=progress  ,file_name  =video_name )
-
-    
 
 
     with bot :

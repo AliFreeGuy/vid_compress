@@ -57,8 +57,13 @@ async def set_editor_quality(bot , call ):
         data = cache.redis.hgetall(vid_key)
         data['task_id'] = 'none'
 
+        cache.redis.hset(vid_key , 'user_lang'  , user.lang)
+
         task = editor.delay(data)
         data['task_id'] = task.id
+        data['user_lang'] = user.lang
+
+        
         try :
                 vid_editor_text = setting.vid_editor_text_fa if user.lang == 'fa' else setting.vid_editor_text_en
                 await bot.edit_message_text(chat_id = call.from_user.id ,
