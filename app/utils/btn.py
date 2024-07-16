@@ -5,6 +5,13 @@ import config
 
 
 
+def admin_panel_btn():
+    buttons = []
+    buttons.append([InlineKeyboardButton(text='ورود به ادمین پنل',url=config.ADMIN_PANEL),])
+    buttons.append([InlineKeyboardButton(text='ری استارت ادیتور',callback_data=f'restart-editor'),])
+    return InlineKeyboardMarkup(buttons)
+    
+
 
 
 def vid_editor_quality(user_lang , vid_key ):

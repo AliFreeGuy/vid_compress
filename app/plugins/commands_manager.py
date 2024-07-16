@@ -4,6 +4,7 @@ from utils import cache
 from utils.connection import connection as con
 from utils import filters as f  
 from utils import btn ,txt
+import config
 from utils.utils import jdate , m_to_g
 
 
@@ -33,7 +34,18 @@ async def command_manager(bot, msg):
         
         elif msg.text.startswith('/start sub_'):
             await activate_sub_handler(bot , msg )
+        
+        elif msg.text == 'پنل' : 
+            await admin_panel_handler(bot , msg )
 
+
+
+
+
+async def admin_panel_handler(bot  ,msg ):
+    
+    if msg.from_user.id == config.ADMIN :
+        await bot.send_message(msg.from_user.id , text =txt.admin_panel , reply_markup = btn.admin_panel_btn() )
 
 
 

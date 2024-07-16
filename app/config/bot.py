@@ -13,8 +13,8 @@ REDIS_HOST = env.get('REDIS_HOST')
 REDIS_PORT = env.get('REDIS_PORT')
 REDIS_DB= env.get('REDIS_DB')
 REDIS_PASS = env.get('REDIS_PASS')
-
-
+EDITOTR_CONTAINER_NAME = env.get('EDITOTR_CONTAINER_NAME')
+ADMIN_PANEL = env.get('ADMIN_PANEL')
 CACHE_TTL = int(env.get('CACHE_TTL'))
 BOT_USERNAME  = env.get('BOT_USERNAME')
 API_URL = env.get('API_URL')

@@ -5,7 +5,9 @@ from utils.connection import connection as con
 from utils import filters as f 
 from utils import btn , txt
 from utils.utils import alert
+import config
 from celery.result import AsyncResult
+import subprocess
 from utils.tasks import app 
 from flower.utils.broker import Broker
 from utils.tasks import editor
@@ -38,8 +40,19 @@ async def callback_manager(bot, call):
     
     elif status[0].startswith('editor_q'):
         await set_editor_quality(bot ,call  )
+    
+    elif status[0] == 'restart-editor' :
+        await restart_editor(bot , call )
 
 
+
+
+async def restart_editor(bot , call ):
+    try:
+        subprocess.run(["docker", "restart", config.EDITOTR_CONTAINER_NAME], check=True)
+        await alert(bot , call , msg = 'ورکرد ادیتور با موفقیت ری استارت شد !')
+    except subprocess.CalledProcessError as e:await alert(bot ,call , msg=str(e))
+    except Exception as e:await alert(bot ,call , msg=str(e))
 
 
 

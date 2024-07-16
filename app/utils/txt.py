@@ -1,6 +1,9 @@
 
 
 place_join_channel = f'لطفا ابتدا عضو کانال شوید !'
+admin_panel = 'منو مدیریت ربات'
+
+
 
 def sub_not_found(user_lang ):
 
@@ -13,6 +16,7 @@ def sub_not_found(user_lang ):
 def task_status(user_lang  , task_count):
     if user_lang == 'fa' :return f'ویدیو های در صف انتظار {str(task_count)} لطفا صبور باشید'
     else :return f'Queued videos {str(task_count)} Please wait'
+
 
 
 
