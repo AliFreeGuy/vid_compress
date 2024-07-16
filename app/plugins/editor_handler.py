@@ -4,11 +4,11 @@ from utils import cache
 from utils.connection import connection as con
 from utils import filters as f  
 from utils import btn ,txt 
-from utils.utils import jdate , m_to_g , alert , b_to_mb
+from utils.utils import jdate , m_to_g , alert , b_to_mb , file_checker
 import config
 from utils.tasks import editor
 import random
-
+ 
 
 @Client.on_message(filters.private &f.user_is_join &filters.video , group=2)
 async def video_editor_handler(bot, msg):
@@ -40,10 +40,19 @@ async def editor_manager(bot ,msg ):
         data['bot_msg_id'] = msg.id
         data['file_size'] = b_to_mb(msg.video.file_size)
         data['user_lang'] = user.lang
+        data['unique_id']  = msg.video.file_unique_id
         update_sub = con.update_sub(chat_id=msg.from_user.id , volume=float(f'-{b_to_mb(msg.video.file_size)}'))
+        
+        
 
+       
         if update_sub : 
-            if update_sub.quality != '' :
+            
+            file_checker_data = file_checker(unique_id = msg.video.file_unique_id , quality = update_sub.quality)
+            if file_checker_data :
+                await bot.send_video(msg.from_user.id , video = file_checker_data['file_id'])
+
+            elif not file_checker_data and  update_sub.quality != '' :
                 data['quality'] = update_sub.quality
                 random_code = str(random.randint(9999 , 999999))
                 data['id']  = random_code
@@ -57,7 +66,6 @@ async def editor_manager(bot ,msg ):
                 print(data)
 
             else :
-        
                 data['quality'] = 'none' 
                 data['task_id'] = 'none'
                 random_code = str(random.randint(9999 , 999999))

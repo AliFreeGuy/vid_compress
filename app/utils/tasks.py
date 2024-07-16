@@ -169,7 +169,8 @@ def editor(self , data ):
                     bot.edit_message_text(chat_id=int(data['chat_id']) ,text = text ,message_id = msg_id ,
                     reply_markup=cancel_markup(user_lang=data["user_lang"] , callback_data=f'cancel-editor:vid_data:{str(data["id"])}'))
                 except Exception as e :logger.warning(e)
-        bot.send_video(int(data['chat_id'])  , video=f'{file_path}/output.mp4', progress=progress ) 
+        outpot_data = bot.send_video(int(data['chat_id'])  , video=f'{file_path}/output.mp4', progress=progress ) 
+        cache.redis.hset(f'vid_data:{data["id"]}' , 'file_id' , outpot_data.video.file_id)
         bot.delete_messages(int(data["chat_id"]), int(data['bot_msg_id'])+1)
 
 

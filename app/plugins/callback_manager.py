@@ -4,7 +4,7 @@ from utils import cache
 from utils.connection import connection as con
 from utils import filters as f 
 from utils import btn , txt
-from utils.utils import alert
+from utils.utils import alert , file_checker
 import config
 from celery.result import AsyncResult
 import subprocess
@@ -62,29 +62,35 @@ async def set_editor_quality(bot , call ):
     setting = con.setting
     vid_key = f'vid_data:{call.data.split(":")[2]}'
     vid_data = cache.redis.hgetall(vid_key)
+    video_quality = call.data.split(':')[0].replace('editor_' , '')
     if vid_data :
-        cache.redis.hset(vid_key , 'quality'  , call.data.split(':')[0].replace('editor_' , ''))
-        data = cache.redis.hgetall(vid_key)
-        
-        data['quality'] = call.data.split(':')[0].replace('editor_' , '')
-        data = cache.redis.hgetall(vid_key)
-        data['task_id'] = 'none'
-
-        cache.redis.hset(vid_key , 'user_lang'  , user.lang)
-
-        task = editor.delay(data)
-        data['task_id'] = task.id
-        data['user_lang'] = user.lang
 
         
-        try :
-                vid_editor_text = setting.vid_editor_text_fa if user.lang == 'fa' else setting.vid_editor_text_en
-                await bot.edit_message_text(chat_id = call.from_user.id ,
-                                            text = vid_editor_text ,
-                                            message_id  = call.message.id,
-                                            reply_markup = btn.vid_editor_btn(vid_data =vid_key , user_lang=user.lang))
-        except Exception as e :
-            logger.warning(e)
+        file_checker_data = file_checker(unique_id = vid_data['unique_id'] , quality =video_quality)
+        if file_checker_data :
+            await bot.send_video(call.from_user.id , video = file_checker_data['file_id'])
+
+        else :
+
+            cache.redis.hset(vid_key , 'quality'  , call.data.split(':')[0].replace('editor_' , ''))
+            data = cache.redis.hgetall(vid_key)
+            data['quality'] = video_quality
+            data = cache.redis.hgetall(vid_key)
+            data['task_id'] = 'none'
+            cache.redis.hset(vid_key , 'user_lang'  , user.lang)
+            task = editor.delay(data)
+            data['task_id'] = task.id
+            data['user_lang'] = user.lang
+
+            
+            try :
+                    vid_editor_text = setting.vid_editor_text_fa if user.lang == 'fa' else setting.vid_editor_text_en
+                    await bot.edit_message_text(chat_id = call.from_user.id ,
+                                                text = vid_editor_text ,
+                                                message_id  = call.message.id,
+                                                reply_markup = btn.vid_editor_btn(vid_data =vid_key , user_lang=user.lang))
+            except Exception as e :
+                logger.warning(e)
         
 
 

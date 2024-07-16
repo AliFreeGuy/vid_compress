@@ -9359,3 +9359,1127 @@ subprocess.CalledProcessError: Command '['docker', 'restart', 'editor-vidcompres
 [1;92mINFO [2024-07-16 09:09:35 - dispatcher.py:180] - Started 8 HandlerTasks[0m
 [1;92mINFO [2024-07-16 09:09:37 - callback_manager.py:25] - Alireza - 5522477996 - restart-editor[0m
 [1;92mINFO [2024-07-16 09:10:04 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 09:13:29 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 09:13:29 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 09:13:29 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 09:13:29 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 09:13:29 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 09:13:29 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 09:13:29 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 09:13:29 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 09:13:30 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 09:13:30 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 09:13:30 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 09:13:30 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 09:13:30 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 09:13:30 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 09:13:30 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 09:13:30 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-16 09:14:38 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 09:14:40 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 09:14:40 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 09:14:40 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 09:14:40 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 09:14:40 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 09:14:40 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 09:14:40 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 09:14:40 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 09:14:41 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 09:14:41 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 09:14:41 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 09:14:41 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 09:14:41 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 09:14:41 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 09:14:41 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 09:14:41 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-16 09:15:48 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 09:15:52 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 09:15:52 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 09:15:52 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 09:15:53 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 09:15:53 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 09:15:53 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 09:15:53 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 09:15:53 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 09:15:54 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 09:15:54 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 09:15:54 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 09:15:54 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 09:15:54 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 09:15:54 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 09:15:54 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 09:15:54 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-16 09:32:07 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 09:32:08 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 09:32:08 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 09:32:08 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 09:32:09 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 09:32:09 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 09:32:09 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 09:32:09 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 09:32:09 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 09:32:10 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 09:32:10 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 09:32:10 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 09:32:10 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 09:32:10 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 09:32:10 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 09:32:10 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 09:32:10 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-16 09:34:55 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 09:34:57 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 09:34:57 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 09:34:57 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 09:34:57 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 09:34:57 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 09:34:57 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 09:34:57 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 09:34:57 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 09:34:58 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 09:34:58 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 09:34:58 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 09:34:58 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 09:34:58 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 09:34:58 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 09:34:58 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 09:34:58 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;91mERROR [2024-07-16 09:35:05 - dispatcher.py:368] - Invalid input of type: 'list'. Convert to a bytes, string, int or float first.[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 355, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/editor_handler.py", line 20, in video_editor_handler
+    await editor_manager(bot , msg )
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/editor_handler.py", line 30, in editor_manager
+    file_data  = file_checker(msg.video.file_unique_id)
+  File "/home/freeguy/Desktop/project/vid-compress/app/utils/utils.py", line 57, in file_checker
+    vids_data = cache.redis.hgetall(cache.redis.keys('vid_data:*'))
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/commands/core.py", line 4954, in hgetall
+    return self.execute_command("HGETALL", name)
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/client.py", line 536, in execute_command
+    return conn.retry.call_with_retry(
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/client.py", line 537, in <lambda>
+    lambda: self._send_command_parse_response(
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/client.py", line 512, in _send_command_parse_response
+    conn.send_command(*args)
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/connection.py", line 465, in send_command
+    self._command_packer.pack(*args),
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/_parsers/encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+[1;92mINFO [2024-07-16 09:36:17 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 09:36:45 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 09:36:45 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 09:36:45 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 09:36:46 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 09:36:46 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 09:36:46 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 09:36:46 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 09:36:46 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 09:36:46 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 09:36:47 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 09:36:47 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 09:36:47 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 09:37:05 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 09:37:05 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 09:37:05 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 09:37:06 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 09:37:06 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 09:37:06 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 09:37:06 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 09:37:06 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 09:37:06 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 09:37:07 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 09:37:07 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 09:37:07 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 09:37:07 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 09:37:07 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 09:37:07 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 09:37:07 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-16 09:37:14 - callback_manager.py:25] - Alireza - 5522477996 - editor_q3:vid_data:38488[0m
+[1;92mINFO [2024-07-16 09:37:26 - callback_manager.py:25] - Alireza - 5522477996 - editor_q1:vid_data:244691[0m
+[1;92mINFO [2024-07-16 09:37:34 - callback_manager.py:25] - Alireza - 5522477996 - setting:quality_q1[0m
+[1;92mINFO [2024-07-16 09:37:48 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 10:11:03 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 10:11:03 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 10:11:03 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 10:11:04 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 10:11:04 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 10:11:04 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 10:11:04 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 10:11:04 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 10:11:04 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 10:11:04 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:11:04 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:11:04 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 10:11:04 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 10:11:04 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 10:11:04 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 10:11:04 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-16 10:12:13 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 10:12:16 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 10:12:16 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 10:12:16 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 10:12:16 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 10:12:16 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 10:12:16 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 10:12:16 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 10:12:16 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 10:12:17 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 10:12:17 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:12:17 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:12:17 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 10:12:17 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 10:12:17 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 10:12:17 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 10:12:17 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-16 10:12:36 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 10:12:39 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 10:12:39 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 10:12:39 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 10:12:39 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 10:12:39 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 10:12:39 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 10:12:39 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 10:12:39 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 10:12:40 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 10:12:40 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:12:40 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:12:40 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 10:12:40 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 10:12:40 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 10:12:40 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 10:12:40 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-16 10:13:26 - callback_manager.py:25] - Alireza - 5522477996 - setting:quality_q1[0m
+[1;92mINFO [2024-07-16 10:13:36 - callback_manager.py:25] - Alireza - 5522477996 - editor_q2:vid_data:838220[0m
+[1;92mINFO [2024-07-16 10:14:49 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 10:14:52 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:02 - connection.py:59] - Unable to connect due to network issues: Socket error: timed out[0m
+[1;92mINFO [2024-07-16 10:15:03 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:13 - connection.py:59] - Unable to connect due to network issues: Socket error: timed out[0m
+[1;92mINFO [2024-07-16 10:15:14 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:20 - connection.py:59] - Unable to connect due to network issues: Socket error: Connection closed unexpectedly[0m
+[1;93mWARNING [2024-07-16 10:15:21 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:15:21 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:15:21 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:15:21 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:21 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:22 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:22 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:23 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:23 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:15:24 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:15:24 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:15:24 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:15:24 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:24 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:25 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:25 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:26 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:26 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:15:27 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:15:27 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:15:27 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:15:27 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:27 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:28 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:28 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:29 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:29 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:15:30 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:15:30 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:15:30 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:15:30 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:30 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:31 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:31 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:32 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:32 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:15:33 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:15:33 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:15:33 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:15:33 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:33 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:34 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:34 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:35 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:35 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:15:36 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:15:36 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:15:36 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:15:36 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:36 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:37 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:37 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:38 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:38 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:15:39 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:15:39 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:15:39 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:15:39 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:39 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:40 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:40 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:41 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:41 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:15:42 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:15:42 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:15:42 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:15:42 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:42 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:43 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:43 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:44 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:44 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:15:45 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:15:45 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:15:45 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:15:45 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:45 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:46 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:46 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:47 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:47 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:15:48 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:15:48 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:15:48 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:15:48 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:48 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:49 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:49 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:50 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:50 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:15:51 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:15:51 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:15:51 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:15:51 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:51 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:52 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:52 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:53 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:53 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:15:54 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:15:54 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:15:54 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:15:54 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:54 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:55 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:55 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:56 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:56 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:15:57 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:15:57 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:15:57 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:15:57 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:57 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:58 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:58 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:15:59 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:15:59 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:16:00 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:16:00 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:16:00 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:16:00 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:00 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:01 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:01 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:02 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:02 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:16:03 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:16:03 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:16:03 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:16:03 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:03 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:04 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:04 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:05 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:05 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:16:06 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:16:06 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:16:06 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:16:06 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:06 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:07 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:07 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:08 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:08 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:16:09 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:16:09 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:16:09 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:16:09 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:09 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:10 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:10 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:11 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:11 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:16:12 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:16:12 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:16:12 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:16:12 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:12 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:13 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:13 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:14 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:14 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:16:15 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:16:15 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:16:15 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:16:15 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:15 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:16 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:16 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:17 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:17 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:16:18 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:16:18 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:16:18 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:16:18 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:18 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:19 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:19 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:20 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:20 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:16:21 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:16:21 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:16:21 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:16:21 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:21 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:22 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:22 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:23 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:23 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:16:24 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:16:24 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:16:24 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:16:24 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:24 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:25 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:25 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:26 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:26 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:16:27 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:16:27 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:16:27 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:16:27 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:27 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:28 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:28 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:29 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:29 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:16:30 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:16:30 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:16:30 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:16:30 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:30 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:31 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:31 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:32 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:32 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:16:33 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:16:33 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:16:33 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:16:33 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:33 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:34 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:34 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:35 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:35 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:16:36 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:16:36 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:16:36 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:16:36 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:36 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:37 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:37 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:38 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:38 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:16:39 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:16:39 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:16:39 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:16:39 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:39 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:40 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:40 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:41 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:41 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:16:42 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:16:42 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:16:42 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:16:42 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:42 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:43 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:43 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:44 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:44 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:16:45 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:16:45 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:16:45 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:16:45 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:45 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:46 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:46 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:47 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:47 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:16:48 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:16:48 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:16:48 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:16:48 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:48 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:49 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:49 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:50 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:50 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:16:51 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:16:51 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:16:51 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:16:51 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:51 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:52 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:52 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:53 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:53 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:16:54 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:16:54 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:16:54 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:16:54 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:54 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:55 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:55 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:56 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:56 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:16:57 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:16:57 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:16:57 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:16:57 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:57 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:58 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:58 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:16:59 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:16:59 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:17:00 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:17:00 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:17:00 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:17:00 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:00 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:01 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:01 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:02 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:02 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:17:03 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:17:03 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:17:03 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:17:03 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:03 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:04 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:04 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:05 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:05 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:17:06 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:17:06 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:17:06 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:17:06 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:06 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:07 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:07 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:08 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:08 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:17:09 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:17:09 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:17:09 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:17:09 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:09 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:10 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:10 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:11 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:11 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:17:12 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:17:12 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:17:12 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:17:12 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:12 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:13 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:13 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:14 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:14 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:17:15 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:17:15 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:17:15 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:17:15 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:15 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:16 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:16 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:17 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:17 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:17:18 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:17:18 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:17:18 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:17:18 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:18 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:19 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:19 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:20 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:20 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:17:21 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:17:21 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:17:21 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:17:21 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:21 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:22 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:22 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:23 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:23 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:17:24 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:17:24 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:17:24 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:17:24 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:24 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:25 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:25 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:26 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:26 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:17:27 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:17:27 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:17:27 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:17:27 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:27 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:28 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:28 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:29 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:29 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:17:30 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:17:30 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:17:30 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:17:30 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:30 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:31 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:31 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:32 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:32 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:17:33 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:17:33 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:17:33 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:17:33 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:33 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:34 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:34 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:35 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:35 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:17:36 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:17:36 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:17:36 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:17:36 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:36 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:37 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:37 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:38 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:38 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:17:39 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:17:39 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:17:39 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:17:39 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:39 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:40 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:40 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:41 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:41 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:17:42 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:17:42 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:17:42 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:17:42 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:42 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:43 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:43 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:44 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:44 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:17:45 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:17:45 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:17:45 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:17:45 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:45 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:46 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:46 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:47 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:47 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:17:48 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:17:48 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:17:48 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:17:48 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:48 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:49 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:49 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:50 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:50 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:17:51 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:17:51 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:17:51 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:17:51 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:51 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:52 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:52 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:53 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:53 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:17:54 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:17:54 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:17:54 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:17:54 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:54 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:56 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:56 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:57 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:57 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:17:58 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:58 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:17:59 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:17:59 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:17:59 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:17:59 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:17:59 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:18:00 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:18:00 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-07-16 10:18:01 - connection.py:56] - Connecting...[0m
+[1;93mWARNING [2024-07-16 10:18:01 - connection.py:59] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-07-16 10:18:02 - connection.py:70] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-07-16 10:18:02 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-16 10:18:02 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-16 10:18:02 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 10:18:02 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 10:18:02 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 10:18:02 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 10:18:02 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 10:18:02 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 10:18:02 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 10:18:02 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 10:18:03 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 10:18:03 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:18:03 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:18:03 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 10:18:03 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 10:18:03 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 10:18:03 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 10:18:03 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;91mERROR [2024-07-16 10:18:07 - dispatcher.py:368] - Invalid input of type: 'list'. Convert to a bytes, string, int or float first.[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 355, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/editor_handler.py", line 20, in video_editor_handler
+    data = file_checker(msg.video.file_unique_id)
+  File "/home/freeguy/Desktop/project/vid-compress/app/utils/utils.py", line 57, in file_checker
+    vids_data = cache.redis.hgetall(cache.redis.keys(f'vid_data:*'))
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/commands/core.py", line 4954, in hgetall
+    return self.execute_command("HGETALL", name)
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/client.py", line 536, in execute_command
+    return conn.retry.call_with_retry(
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/client.py", line 537, in <lambda>
+    lambda: self._send_command_parse_response(
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/client.py", line 512, in _send_command_parse_response
+    conn.send_command(*args)
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/connection.py", line 465, in send_command
+    self._command_packer.pack(*args),
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/_parsers/encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+[1;92mINFO [2024-07-16 10:18:20 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 10:18:24 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 10:18:24 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 10:18:24 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 10:18:25 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 10:18:25 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 10:18:25 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 10:18:25 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 10:18:25 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 10:18:26 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 10:18:26 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:18:26 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:18:26 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 10:18:26 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 10:18:26 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 10:18:26 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 10:18:26 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;91mERROR [2024-07-16 10:18:35 - dispatcher.py:368] - Invalid input of type: 'list'. Convert to a bytes, string, int or float first.[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 355, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/editor_handler.py", line 20, in video_editor_handler
+    data = file_checker(msg.video.file_unique_id)
+  File "/home/freeguy/Desktop/project/vid-compress/app/utils/utils.py", line 57, in file_checker
+    vids_data = cache.redis.hgetall(cache.redis.keys(f'vid_data:*'))
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/commands/core.py", line 4954, in hgetall
+    return self.execute_command("HGETALL", name)
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/client.py", line 536, in execute_command
+    return conn.retry.call_with_retry(
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/retry.py", line 46, in call_with_retry
+    return do()
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/client.py", line 537, in <lambda>
+    lambda: self._send_command_parse_response(
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/client.py", line 512, in _send_command_parse_response
+    conn.send_command(*args)
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/connection.py", line 465, in send_command
+    self._command_packer.pack(*args),
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/connection.py", line 96, in pack
+    for arg in map(self.encode, args):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/redis/_parsers/encoders.py", line 29, in encode
+    raise DataError(
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.
+[1;92mINFO [2024-07-16 10:19:13 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 10:19:16 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 10:19:16 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 10:19:16 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 10:19:17 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 10:19:17 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 10:19:17 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 10:19:17 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 10:19:17 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 10:19:18 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 10:19:18 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:19:18 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:19:18 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 10:19:18 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 10:19:18 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 10:19:18 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 10:19:18 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-16 10:27:36 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 10:27:40 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 10:27:41 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 10:27:41 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 10:27:42 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 10:27:42 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 10:27:42 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 10:27:42 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 10:27:42 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 10:27:42 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 10:27:42 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:27:42 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:27:42 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 10:27:42 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 10:27:42 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 10:27:42 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 10:27:42 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-16 10:27:55 - callback_manager.py:25] - Alireza - 5522477996 - editor_q2:vid_data:353833[0m
+[1;92mINFO [2024-07-16 10:28:02 - callback_manager.py:25] - Alireza - 5522477996 - setting:quality_q1[0m
+[1;92mINFO [2024-07-16 10:31:05 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 10:31:07 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 10:31:07 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 10:31:07 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 10:31:08 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 10:31:08 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 10:31:08 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 10:31:08 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 10:31:08 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 10:31:24 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 10:31:24 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 10:31:24 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 10:31:25 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 10:31:25 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 10:31:25 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 10:31:25 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 10:31:25 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 10:31:25 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 10:31:26 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:31:26 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:31:26 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 10:31:26 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 10:31:26 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 10:31:26 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 10:31:26 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;91mERROR [2024-07-16 10:31:28 - dispatcher.py:368] - local variable 'file_checker' referenced before assignment[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 355, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/editor_handler.py", line 20, in video_editor_handler
+    await editor_manager(bot , msg )
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/editor_handler.py", line 45, in editor_manager
+    file_checker = file_checker(unique_id = msg.video.file_unique_id , quality = update_sub.quality)
+UnboundLocalError: local variable 'file_checker' referenced before assignment
+[1;92mINFO [2024-07-16 10:31:57 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 10:31:59 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 10:31:59 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 10:31:59 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 10:32:00 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 10:32:00 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 10:32:00 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 10:32:00 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 10:32:00 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 10:32:00 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 10:32:00 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:32:00 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:32:00 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 10:32:00 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 10:32:00 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 10:32:00 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 10:32:00 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;91mERROR [2024-07-16 10:32:06 - dispatcher.py:368] - 'unique_id'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 355, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/editor_handler.py", line 20, in video_editor_handler
+    await editor_manager(bot , msg )
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/editor_handler.py", line 45, in editor_manager
+    file_checker_data = file_checker(unique_id = msg.video.file_unique_id , quality = update_sub.quality)
+  File "/home/freeguy/Desktop/project/vid-compress/app/utils/utils.py", line 60, in file_checker
+    if vid['unique_id'] == unique_id and vid['quality'] == quality :
+KeyError: 'unique_id'
+[1;92mINFO [2024-07-16 10:32:42 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 10:32:44 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 10:32:44 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 10:32:44 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 10:32:45 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 10:32:45 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 10:32:45 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 10:32:45 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 10:32:45 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 10:32:46 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 10:32:46 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:32:46 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:32:46 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 10:32:46 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 10:32:46 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 10:32:46 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 10:32:46 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-16 10:33:19 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 10:33:20 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 10:33:20 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 10:33:20 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 10:33:21 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 10:33:21 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 10:33:21 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 10:33:21 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 10:33:21 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 10:33:22 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 10:33:22 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:33:22 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:33:22 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 10:33:22 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 10:33:22 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 10:33:22 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 10:33:22 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-16 10:33:32 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 10:34:00 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 10:34:00 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 10:34:00 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 10:34:01 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 10:34:01 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 10:34:01 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 10:34:01 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 10:34:01 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 10:34:02 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 10:34:02 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:34:02 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:34:02 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 10:34:02 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 10:34:02 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 10:34:02 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 10:34:02 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-16 10:34:11 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 10:34:26 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 10:34:26 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 10:34:26 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 10:34:27 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 10:34:27 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 10:34:27 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 10:34:27 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 10:34:27 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 10:34:28 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 10:34:28 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:34:28 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:34:28 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 10:34:28 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 10:34:28 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 10:34:28 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 10:34:28 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;93mWARNING [2024-07-16 10:35:19 - filters.py:32] - 'NoneType' object has no attribute 'replace'[0m
+[1;92mINFO [2024-07-16 10:35:44 - callback_manager.py:25] - Alireza - 5522477996 - cancel-editor:vid_data:42935[0m
+[1;92mINFO [2024-07-16 10:38:26 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 10:38:31 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 10:38:31 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 10:38:31 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 10:38:31 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 10:38:31 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 10:38:31 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 10:38:31 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 10:38:31 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 10:38:32 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 10:38:32 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:38:32 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:38:32 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 10:38:32 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 10:38:32 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 10:38:32 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 10:38:32 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;93mWARNING [2024-07-16 10:39:18 - filters.py:32] - 'NoneType' object has no attribute 'replace'[0m
+[1;93mWARNING [2024-07-16 10:40:29 - filters.py:32] - 'NoneType' object has no attribute 'replace'[0m
+[1;92mINFO [2024-07-16 10:40:33 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 10:41:24 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 10:41:24 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 10:41:24 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 10:41:25 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 10:41:25 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 10:41:25 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 10:41:25 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 10:41:25 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 10:41:26 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 10:41:26 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:41:26 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:41:26 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 10:41:26 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 10:41:26 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 10:41:26 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 10:41:26 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;93mWARNING [2024-07-16 10:42:14 - filters.py:32] - 'NoneType' object has no attribute 'replace'[0m
+[1;92mINFO [2024-07-16 10:42:30 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 10:51:28 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 10:51:29 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 10:51:29 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 10:51:30 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 10:51:30 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 10:51:30 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 10:51:30 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 10:51:30 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 10:51:30 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 10:51:30 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:51:30 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:51:30 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 10:51:30 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 10:51:30 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 10:51:30 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 10:51:30 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-16 10:51:42 - callback_manager.py:25] - Alireza - 5522477996 - setting:quality_q1[0m
+[1;92mINFO [2024-07-16 10:51:53 - callback_manager.py:25] - Alireza - 5522477996 - editor_q1:vid_data:696198[0m
+[1;91mERROR [2024-07-16 10:51:53 - dispatcher.py:368] - 'file_unique_id'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 355, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/callback_manager.py", line 42, in callback_manager
+    await set_editor_quality(bot ,call  )
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/callback_manager.py", line 68, in set_editor_quality
+    file_checker_data = file_checker(unique_id = vid_data['file_unique_id'] , quality =video_quality)
+KeyError: 'file_unique_id'
+[1;92mINFO [2024-07-16 10:52:31 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 10:52:32 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 10:52:32 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 10:52:32 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 10:52:33 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 10:52:33 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 10:52:33 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 10:52:33 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 10:52:33 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 10:52:34 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 10:52:34 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:52:34 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:52:34 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 10:52:34 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 10:52:34 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 10:52:34 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 10:52:34 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-16 10:52:40 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 10:52:42 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 10:52:43 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 10:52:43 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 10:52:43 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 10:52:43 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 10:52:43 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 10:52:43 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 10:52:43 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 10:52:44 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 10:52:44 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:52:44 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:52:44 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 10:52:44 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 10:52:44 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 10:52:44 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 10:52:44 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-16 10:52:46 - callback_manager.py:25] - Alireza - 5522477996 - editor_q1:vid_data:696198[0m
+[1;91mERROR [2024-07-16 10:52:46 - dispatcher.py:368] - 'file_unique_id'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 355, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/callback_manager.py", line 42, in callback_manager
+    await set_editor_quality(bot ,call  )
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/callback_manager.py", line 68, in set_editor_quality
+    file_checker_data = file_checker(unique_id = vid_data['file_unique_id'] , quality =video_quality)
+KeyError: 'file_unique_id'
+[1;92mINFO [2024-07-16 10:53:03 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 10:53:05 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 10:53:05 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 10:53:05 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 10:53:06 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 10:53:06 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 10:53:06 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 10:53:06 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 10:53:06 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 10:53:06 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 10:53:07 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:53:07 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:53:07 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 10:53:07 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 10:53:07 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 10:53:07 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 10:53:07 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-16 10:53:09 - callback_manager.py:25] - Alireza - 5522477996 - editor_q1:vid_data:696198[0m
+[1;91mERROR [2024-07-16 10:53:09 - dispatcher.py:368] - 'file_unique_id'[0m
+Traceback (most recent call last):
+  File "/home/freeguy/.local/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 355, in handler_worker
+    await handler.callback(self.client, *args)
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/callback_manager.py", line 42, in callback_manager
+    await set_editor_quality(bot ,call  )
+  File "/home/freeguy/Desktop/project/vid-compress/app/plugins/callback_manager.py", line 69, in set_editor_quality
+    file_checker_data = file_checker(unique_id = vid_data['file_unique_id'] , quality =video_quality)
+KeyError: 'file_unique_id'
+[1;92mINFO [2024-07-16 10:53:22 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 10:53:24 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 10:53:24 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 10:53:24 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 10:53:24 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 10:53:24 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 10:53:24 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 10:53:24 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 10:53:24 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 10:53:25 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 10:53:25 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:53:25 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:53:25 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 10:53:25 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 10:53:25 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 10:53:25 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 10:53:25 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-16 10:53:28 - callback_manager.py:25] - Alireza - 5522477996 - editor_q1:vid_data:696198[0m
+[1;92mINFO [2024-07-16 10:53:39 - callback_manager.py:25] - Alireza - 5522477996 - editor_q2:vid_data:696198[0m
+[1;92mINFO [2024-07-16 10:53:42 - callback_manager.py:25] - Alireza - 5522477996 - editor_q3:vid_data:696198[0m
+[1;92mINFO [2024-07-16 10:53:59 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-16 10:54:02 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 10:54:02 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 10:54:02 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 10:54:03 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 10:54:03 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 10:54:03 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 10:54:03 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 10:54:03 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 10:54:04 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 10:54:18 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-16 10:54:18 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-16 10:54:18 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-16 10:54:19 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-16 10:54:19 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-16 10:54:19 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-16 10:54:19 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-16 10:54:19 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-16 10:54:20 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-16 10:54:20 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:54:20 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-16 10:54:20 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-16 10:54:20 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-16 10:54:20 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-16 10:54:20 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-16 10:54:20 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-16 10:54:25 - callback_manager.py:25] - Alireza - 5522477996 - editor_q1:vid_data:696198[0m
+[1;92mINFO [2024-07-16 10:54:29 - callback_manager.py:25] - Alireza - 5522477996 - editor_q2:vid_data:696198[0m
+[1;93mWARNING [2024-07-16 10:54:50 - filters.py:32] - 'NoneType' object has no attribute 'replace'[0m
+[1;92mINFO [2024-07-16 10:54:54 - callback_manager.py:25] - Alireza - 5522477996 - editor_q2:vid_data:898117[0m
+[1;92mINFO [2024-07-16 10:54:57 - callback_manager.py:25] - Alireza - 5522477996 - editor_q3:vid_data:898117[0m
+[1;92mINFO [2024-07-16 10:55:02 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m

@@ -53,6 +53,15 @@ def jdate(date_miladi):
 
 
 
+def file_checker(unique_id , quality):
+    vids_data = [cache.redis.hgetall(i) for i in cache.redis.keys(f'vid_data:*')]
+    vid_data = None 
+    for vid in vids_data :
+        if vid.get('unique_id') == unique_id and vid.get('quality') == quality and vid.get('file_id') :
+            vid_data = vid
+    return vid_data
+
+
 
 
 async def join_checker(cli , msg , channels ):
