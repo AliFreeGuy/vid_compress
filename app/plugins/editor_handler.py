@@ -47,7 +47,7 @@ async def editor_manager(bot ,msg ):
 
        
         if update_sub : 
-            
+
             file_checker_data = file_checker(unique_id = msg.video.file_unique_id , quality = update_sub.quality)
             if file_checker_data :
                 await bot.send_video(msg.from_user.id , video = file_checker_data['file_id'])
