@@ -10702,3 +10702,70 @@ AttributeError: 'Celery' object has no attribute 'delete_messages'
 [1;92mINFO [2024-07-16 11:30:04 - callback_manager.py:25] - Alireza - 5522477996 - setting:quality_q3[0m
 [1;92mINFO [2024-07-16 11:30:05 - callback_manager.py:25] - Alireza - 5522477996 - setting:quality_q2[0m
 [1;92mINFO [2024-07-16 11:30:38 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-17 08:29:05 - auth.py:97] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-07-17 08:29:05 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-17 08:29:05 - connection.py:63] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-17 08:29:07 - auth.py:282] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-17 08:29:07 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-17 08:29:07 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-17 08:29:07 - connection.py:63] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-17 08:29:07 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-17 08:29:08 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-17 08:29:08 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-17 08:29:08 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-17 08:29:08 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-17 08:29:08 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-17 08:29:08 - session.py:297] - PingTask stopped[0m
+[1;92mINFO [2024-07-17 08:29:08 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-17 08:29:08 - session.py:327] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-17 08:29:08 - session.py:183] - Session stopped[0m
+[1;92mINFO [2024-07-17 08:29:08 - auth.py:97] - Start creating a new auth key on DC4[0m
+[1;92mINFO [2024-07-17 08:29:08 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-17 08:29:08 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-17 08:29:10 - auth.py:282] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-17 08:29:10 - connection.py:75] - Disconnected[0m
+[1;92mINFO [2024-07-17 08:29:10 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-17 08:29:10 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-17 08:29:10 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-17 08:29:11 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-17 08:29:11 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-17 08:29:11 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-17 08:29:11 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-17 08:29:11 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-17 08:29:21 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-17 08:29:22 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-17 08:29:22 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-17 08:29:22 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-17 08:29:22 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-17 08:29:22 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-17 08:29:22 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-17 08:29:22 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-17 08:29:23 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-17 08:30:05 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-17 08:30:05 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-17 08:30:05 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-17 08:30:06 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-17 08:30:06 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-17 08:30:06 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-17 08:30:06 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-17 08:30:06 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-17 08:30:06 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-17 08:30:17 - connection.py:56] - Connecting...[0m
+[1;92mINFO [2024-07-17 08:30:18 - connection.py:63] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-17 08:30:18 - session.py:300] - NetworkTask started[0m
+[1;92mINFO [2024-07-17 08:30:18 - session.py:142] - Session initialized: Layer 182[0m
+[1;92mINFO [2024-07-17 08:30:18 - session.py:143] - Device: CPython 3.10.12 - Pyrogram 2.1.22[0m
+[1;92mINFO [2024-07-17 08:30:18 - session.py:144] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-07-17 08:30:18 - session.py:158] - Session started[0m
+[1;92mINFO [2024-07-17 08:30:18 - session.py:275] - PingTask started[0m
+[1;92mINFO [2024-07-17 08:30:19 - client.py:780] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-17 08:30:19 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-17 08:30:19 - client.py:780] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-17 08:30:19 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-17 08:30:19 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-17 08:30:19 - client.py:780] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-17 08:30:19 - client.py:857] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-17 08:30:19 - dispatcher.py:180] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-17 08:30:27 - callback_manager.py:25] - Alireza - 5522477996 - setting:lang_fa[0m
+[1;93mWARNING [2024-07-17 08:31:10 - filters.py:32] - 'NoneType' object has no attribute 'replace'[0m
+[1;92mINFO [2024-07-17 08:31:31 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
