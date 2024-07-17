@@ -34,6 +34,7 @@ async def updater(_ , cli , msg ):
     return True
 
 async def user_is_join(_ , cli , msg ):
+        setting = con.setting
         if con and con.setting.channel_url and con.setting.channel_chat_id :
             channels = [{'chat_id' : con.setting.channel_chat_id , 'link'  : con.setting.channel_url} ]
             is_join = await join_checker(cli , msg , channels)

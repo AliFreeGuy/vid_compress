@@ -75,6 +75,10 @@ async def set_editor_quality(bot , call ):
 
             cache.redis.hset(vid_key , 'quality'  , call.data.split(':')[0].replace('editor_' , ''))
             data = cache.redis.hgetall(vid_key)
+            print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@')
+
+            print(video_quality)
+            print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@')
             data['quality'] = video_quality
             data = cache.redis.hgetall(vid_key)
             data['task_id'] = 'none'

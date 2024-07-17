@@ -23,3 +23,6 @@ ADMIN =int( env.get('ADMIN'))
 BACKUP = int(env.get('BACKUP_CHANNEL'))
 SESSION_STRING = env.get('SESSION_STRING')
 EDITOR_TTL = int(env.get('EDITOR_TTL'))
+
+print(BOT_SESSION)
+print(ADMIN)

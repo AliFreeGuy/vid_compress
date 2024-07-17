@@ -22,7 +22,7 @@ from utils.connection import connection as con
 from config import REDIS_DB, REDIS_HOST, REDIS_PORT
 
 r = redis.Redis(host=REDIS_HOST, port=REDIS_PORT, db=REDIS_DB, decode_responses=True)
-app = Celery('tasks', broker='redis://localhost:6379/0', backend='redis://localhost:6379/0')
+app = Celery('tasks', broker=f'redis://{REDIS_HOST}:6379/0', backend=f'redis://{REDIS_HOST}:6379/0')
 app.conf.timezone = 'UTC'
 
 app.conf.update(
@@ -121,7 +121,6 @@ def editor(self , data ):
     with bot :
             
             quality = f'quality_{data["quality"].replace("q" , "")}'
-            print(quality)
 
             cmd = ["ffmpeg", "-i", video_name,]
             cmd.extend(["-filter_complex", f"drawtext=text='{setting.watermark_text}':fontsize=30:fontcolor=yellow:x=(main_w-text_w-10):y=(main_h-text_h-10)"])

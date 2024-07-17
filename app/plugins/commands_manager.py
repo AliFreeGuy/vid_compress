@@ -115,16 +115,18 @@ async def profile_handler(bot , msg ):
 async def plans_handler(bot , msg ):
     try : 
         plans = con.plans
-        user = con.get_user(chat_id  = msg.from_user.id )
-        setting = con.setting
-        plans_text = []
-        for plan in plans : 
-            if user.lang == 'fa' : plans_text.append(plan['des_fa'])
-            else :plans_text.append(plan['des_en'])
-        await bot.send_message(
-                chat_id = msg.from_user.id ,
-                text = '\n\n〰️〰️〰️〰️〰〰️〰️〰️〰️〰〰️\n\n'.join(plans_text),
-                reply_markup = btn.admin_chat_id(user_lang = user.lang , chat_id = setting.admin_chat_id))
+        if plans :
+            user = con.get_user(chat_id  = msg.from_user.id )
+            setting = con.setting
+            plans_text = []
+            for plan in plans : 
+                if user.lang == 'fa' : plans_text.append(plan['des_fa'])
+                else :plans_text.append(plan['des_en'])
+            await bot.send_message(
+                    chat_id = msg.from_user.id ,
+                    text = '\n\n〰️〰️〰️〰️〰〰️〰️〰️〰️〰〰️\n\n'.join(plans_text),
+                    reply_markup = btn.admin_chat_id(user_lang = user.lang , chat_id = setting.admin_chat_id))
+        await bot.send_message(msg.from_user.id , 'پلنی وجود ندارد !')
         
     except Exception as e :
         logger.error(e)
