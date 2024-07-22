@@ -64,11 +64,6 @@ async def editor_manager(bot ,msg ):
                 data['thumb'] = msg.video.thumbs[0].file_id if msg.video.thumbs else 'none'
                 task = editor.delay(data)
                 data['task_id'] = task.id
-                
-                print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2')
-                print(data)
-                print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2')
-
                 cache.redis.hmset(vid_data_key , data)
                 vid_editor_text = setting.vid_editor_text_fa if user.lang == 'fa' else setting.vid_editor_text_en
                 await msg.reply_text(vid_editor_text, quote=True , reply_markup  =btn.vid_editor_btn(vid_data =vid_data_key , user_lang=user.lang))

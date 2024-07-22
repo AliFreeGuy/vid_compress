@@ -11,6 +11,8 @@ import subprocess
 from utils.tasks import app 
 from flower.utils.broker import Broker
 from utils.tasks import editor
+from utils.utils import delet_dir
+import docker
 
 
 @Client.on_callback_query(f.user_not_join & f.updater , group=0)
@@ -48,11 +50,22 @@ async def callback_manager(bot, call):
 
 
 async def restart_editor(bot , call ):
+
+
+    client = docker.from_env()
+    
     try:
-        subprocess.run(["docker", "restart", config.EDITOTR_CONTAINER_NAME], check=True)
+        container = client.containers.get(config.EDITOTR_CONTAINER_NAME)
+        container.restart()
         await alert(bot , call , msg = 'ورکرد ادیتور با موفقیت ری استارت شد !')
-    except subprocess.CalledProcessError as e:await alert(bot ,call , msg=str(e))
-    except Exception as e:await alert(bot ,call , msg=str(e))
+    except docker.errors.NotFound:
+        print(f"Container {container_name} not found.")
+    except docker.errors.APIError as e:
+        await alert(bot , call , msg = e)
+    
+    delet_dir('/app/utils/videos')
+
+    
 
 
 

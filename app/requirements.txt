@@ -23,6 +23,7 @@ prometheus_client==0.20.0
 prompt_toolkit==3.0.47
 pyaes==1.6.1
 PySocks==1.7.1
+docker
 python-dateutil==2.9.0.post0
 python-dotenv==1.0.0
 pytz==2024.1
