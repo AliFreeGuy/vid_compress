@@ -11,6 +11,7 @@ from pyrogram import Client
 import time
 import os
 from pathlib import Path
+import subprocess
 import random
 
 parent_dir = dirname(dirname(abspath(__file__)))
@@ -22,7 +23,7 @@ from utils.connection import connection as con
 from config import REDIS_DB, REDIS_HOST, REDIS_PORT
 
 r = redis.Redis(host=REDIS_HOST, port=REDIS_PORT, db=REDIS_DB, decode_responses=True)
-app = Celery('tasks', broker=f'redis://{REDIS_HOST}:6379/0', backend=f'redis://{REDIS_HOST}:6379/0')
+app = Celery('tasks', broker='redis://redis:6379/0', backend='redis://redis:6379/0')
 app.conf.timezone = 'UTC'
 
 app.conf.update(
@@ -119,16 +120,30 @@ def editor(self , data ):
 
     
     with bot :
-            
             quality = f'quality_{data["quality"].replace("q" , "")}'
+            # thumb_cmd  =  [
+            #             'ffmpeg',
+            #             '-i', video_name,         
+            #             '-ss', '00:00:01',         
+            #             '-vframes', '1',           
+            #             f'{file_path}/thumb.png']
+            # subprocess.run(thumb_cmd, check=True)
 
-            cmd = ["ffmpeg", "-i", video_name,]
-            cmd.extend(["-filter_complex", f"drawtext=text='{setting.watermark_text}':fontsize=30:fontcolor=yellow:x=(main_w-text_w-10):y=(main_h-text_h-10)"])
-            cmd.extend([
-                "-r", "15",
-                "-b:v", f"{getattr(setting , quality)}k",
-                "-b:a", "64k",
-                f'{file_path}/output.mp4'])
+            
+
+            cmd = [
+        "ffmpeg", "-i", video_name,
+        "-filter_complex", (
+            f"drawtext=text='{setting.watermark_text}':fontsize=30:fontcolor=yellow:x=(main_w-text_w-10):y=(main_h-text_h-10)"
+        ),
+        "-r", "15",
+        "-b:v", f"{getattr(setting, quality)}k",
+        "-b:a", "64k",
+        "-map_metadata", "0",
+        "-movflags", "+faststart",
+        f'{file_path}/output.mp4'
+    ]
+
 
             ff = FfmpegProgress(cmd)
             for progress in ff.run_command_with_progress():
@@ -194,6 +209,26 @@ def editor(self , data ):
 
 #celery -A tasks worker --beat -Q downloader_queue --concurrency=1 -n downloader_worker@%h
 #celery -A tasks worker -Q uploader_queue --concurrency=1 -n uploader_worker@%h
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
