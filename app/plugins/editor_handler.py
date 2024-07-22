@@ -58,16 +58,28 @@ async def editor_manager(bot ,msg ):
                 data['id']  = random_code
                 vid_data_key = f'vid_data:{random_code}'
                 data['task_id'] = 'none'
+                data['width'] = msg.video.width
+                data['height']= msg.video.height
+                data['duration'] = msg.video.duration
+                data['thumb'] = msg.video.thumbs[0].file_id if msg.video.thumbs else 'none'
                 task = editor.delay(data)
                 data['task_id'] = task.id
+                
+                print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2')
+                print(data)
+                print('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2')
+
                 cache.redis.hmset(vid_data_key , data)
                 vid_editor_text = setting.vid_editor_text_fa if user.lang == 'fa' else setting.vid_editor_text_en
                 await msg.reply_text(vid_editor_text, quote=True , reply_markup  =btn.vid_editor_btn(vid_data =vid_data_key , user_lang=user.lang))
-                print(data)
 
             else :
                 data['quality'] = 'none' 
                 data['task_id'] = 'none'
+                data['width'] = msg.video.width
+                data['height']= msg.video.height
+                data['duration'] = msg.video.duration
+                data['thumb'] = msg.video.thumbs[0].file_id if msg.video.thumbs else 'none'
                 random_code = str(random.randint(9999 , 999999))
                 data['id']  = random_code
                 vid_data_key = f'vid_data:{random_code}'

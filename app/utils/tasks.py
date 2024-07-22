@@ -77,6 +77,7 @@ def cancel_markup(user_lang , callback_data):
 @app.task(name='tasks.editor', bind=True, default_retry_delay=1)
 def editor(self , data ):
     
+
     videos_folder = Path.cwd() / 'videos'
     videos_folder.mkdir(exist_ok=True)
     file_path = videos_folder / str(self.request.id)
@@ -121,15 +122,6 @@ def editor(self , data ):
     
     with bot :
             quality = f'quality_{data["quality"].replace("q" , "")}'
-            # thumb_cmd  =  [
-            #             'ffmpeg',
-            #             '-i', video_name,         
-            #             '-ss', '00:00:01',         
-            #             '-vframes', '1',           
-            #             f'{file_path}/thumb.png']
-            # subprocess.run(thumb_cmd, check=True)
-
-            
 
             cmd = [
         "ffmpeg", "-i", video_name,
@@ -183,13 +175,35 @@ def editor(self , data ):
                     bot.edit_message_text(chat_id=int(data['chat_id']) ,text = text ,message_id = msg_id ,
                     reply_markup=cancel_markup(user_lang=data["user_lang"] , callback_data=f'cancel-editor:vid_data:{str(data["id"])}'))
                 except Exception as e :logger.warning(e)
-        outpot_data = bot.send_video(int(data['chat_id'])  , video=f'{file_path}/output.mp4', progress=progress ) 
+
+
+        
+        if  data['thumb'] != 'none':
+            file_id=data['thumb']
+            thumb= bot.download_media(file_id , f'{file_path}/thumb.jpg')
+            outpot_data = bot.send_video(int(data['chat_id'])  ,
+                                                            video=f'{file_path}/output.mp4',
+                                                            progress=progress  ,
+                                                            height=data['height'] ,
+                                                            width=data['width'],
+                                                            thumb=thumb ,
+                                                            duration = data['duration']
+                                                            ) 
+        else :
+             outpot_data = bot.send_video(int(data['chat_id'])  ,
+                                                            video=f'{file_path}/output.mp4',
+                                                            progress=progress  ,
+                                                            height=data['height'] ,
+                                                            width=data['width'],
+                                                            duration = data['duration']
+                                                            ) 
+             
         cache.redis.hset(f'vid_data:{data["id"]}' , 'file_id' , outpot_data.video.file_id)
         bot.delete_messages(int(data["chat_id"]), int(data['bot_msg_id'])+1)
 
 
 
-    utils.delet_dir(file_path)
+    # utils.delet_dir(file_path)
 
 
 
@@ -209,26 +223,6 @@ def editor(self , data ):
 
 #celery -A tasks worker --beat -Q downloader_queue --concurrency=1 -n downloader_worker@%h
 #celery -A tasks worker -Q uploader_queue --concurrency=1 -n uploader_worker@%h
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
