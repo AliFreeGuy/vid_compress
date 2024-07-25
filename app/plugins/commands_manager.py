@@ -126,7 +126,8 @@ async def plans_handler(bot , msg ):
                     chat_id = msg.from_user.id ,
                     text = '\n\n〰️〰️〰️〰️〰〰️〰️〰️〰️〰〰️\n\n'.join(plans_text),
                     reply_markup = btn.admin_chat_id(user_lang = user.lang , chat_id = setting.admin_chat_id))
-        await bot.send_message(msg.from_user.id , 'پلنی وجود ندارد !')
+        else :
+            await bot.send_message(msg.from_user.id , 'پلنی وجود ندارد !')
         
     except Exception as e :
         logger.error(e)
