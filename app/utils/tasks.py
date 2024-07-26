@@ -177,33 +177,38 @@ def editor(self , data ):
                 except Exception as e :logger.warning(e)
 
 
-        
-        if  data['thumb'] != 'none':
-            file_id=data['thumb']
-            thumb= bot.download_media(file_id , f'{file_path}/thumb.jpg')
-            outpot_data = bot.send_video(int(data['chat_id'])  ,
-                                                            video=f'{file_path}/output.mp4',
-                                                            progress=progress  ,
-                                                            height=data['height'] ,
-                                                            width=data['width'],
-                                                            thumb=thumb ,
-                                                            duration = data['duration']
-                                                            ) 
-        else :
-             outpot_data = bot.send_video(int(data['chat_id'])  ,
-                                                            video=f'{file_path}/output.mp4',
-                                                            progress=progress  ,
-                                                            height=data['height'] ,
-                                                            width=data['width'],
-                                                            duration = data['duration']
-                                                            ) 
-             
-        cache.redis.hset(f'vid_data:{data["id"]}' , 'file_id' , outpot_data.video.file_id)
-        bot.delete_messages(int(data["chat_id"]), int(data['bot_msg_id'])+1)
+                
+        chat_id = int(data['chat_id'])
+        bot_msg_id = int(data['bot_msg_id'])
+        height = int(data['height'])
+        width = int(data['width'])
+        duration = float(data['duration'])
 
+        if data['thumb'] != 'none':
+            file_id = data['thumb']
+            thumb = bot.download_media(file_id, f'{file_path}/thumb.jpg')
+            outpot_data = bot.send_video(
+                chat_id,
+                video=f'{file_path}/output.mp4',
+                progress=progress,
+                height=height,
+                width=width,
+                thumb=thumb,
+                duration=duration
+            )
+        else:
+            outpot_data = bot.send_video(
+                chat_id,
+                video=f'{file_path}/output.mp4',
+                progress=progress,
+                height=height,
+                width=width,
+                duration=duration
+            )
 
-
-    # utils.delet_dir(file_path)
+        cache.redis.hset(f'vid_data:{data["id"]}', 'file_id', outpot_data.video.file_id)
+        bot.delete_messages(chat_id, bot_msg_id + 1)
+        utils.delet_dir(file_path)
 
 
 

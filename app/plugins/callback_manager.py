@@ -57,6 +57,9 @@ async def restart_editor(bot , call ):
     try:
         container = client.containers.get(config.EDITOTR_CONTAINER_NAME)
         container.restart()
+        redis_client =  cache.redis
+        celery_task_keys = redis_client.keys('celery-task-meta-*')
+        for key in celery_task_keys:redis_client.delete(key)
         await alert(bot , call , msg = 'ورکرد ادیتور با موفقیت ری استارت شد !')
     except docker.errors.NotFound:
         print(f"Container {container_name} not found.")
