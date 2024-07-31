@@ -87,28 +87,26 @@ async def set_editor_quality(bot , call ):
             await bot.delete_messages(call.from_user.id, call.message.id)
             await bot.send_video(call.from_user.id , video = file_checker_data['file_id'])
             
-        else :
-
-            cache.redis.hset(vid_key , 'quality'  , call.data.split(':')[0].replace('editor_' , ''))
+        else:
+            cache.redis.hset(vid_key, 'quality', call.data.split(':')[0].replace('editor_', ''))
             data = cache.redis.hgetall(vid_key)
             data['quality'] = video_quality
-            data = cache.redis.hgetall(vid_key)
-            data['task_id'] = 'none'
-            cache.redis.hset(vid_key , 'user_lang'  , user.lang)
+            cache.redis.hset(vid_key, 'user_lang', user.lang)
             task = editor.delay(data)
             data['task_id'] = task.id
             data['user_lang'] = user.lang
-
             
-            try :
-                    vid_editor_text = setting.vid_editor_text_fa if user.lang == 'fa' else setting.vid_editor_text_en
-                    await bot.edit_message_text(chat_id = call.from_user.id ,
-                                                text = vid_editor_text ,
-                                                message_id  = call.message.id,
-                                                reply_markup = btn.vid_editor_btn(vid_data =vid_key , user_lang=user.lang))
-            except Exception as e :
+            # ذخیره داده‌های به روز شده در Redis
+            cache.redis.hmset(vid_key, data)
+
+            try:
+                vid_editor_text = setting.vid_editor_text_fa if user.lang == 'fa' else setting.vid_editor_text_en
+                await bot.edit_message_text(chat_id=call.from_user.id,
+                                            text=vid_editor_text,
+                                            message_id=call.message.id,
+                                            reply_markup=btn.vid_editor_btn(vid_data=vid_key, user_lang=user.lang))
+            except Exception as e:
                 logger.warning(e)
-        
 
 
 
@@ -125,7 +123,6 @@ async def status_editor(bot , call ):
     )
     async def queue_length():
         queues = await broker.queues(["celery"])
-        print(queues)
         return queues[0].get("messages")
     
 
@@ -142,13 +139,16 @@ async def status_editor(bot , call ):
 async def cancel_editor(bot , call ):
     try :
         vid_data = cache.redis.hgetall(call.data.replace('cancel-editor:' , ''))
+        print(vid_data)
         task_id = vid_data['task_id']
+        print(task_id)
         task = AsyncResult(task_id)
         task.revoke(terminate=True)
         await alert(bot  ,call , msg= 'عملیات با موفقیت کنسل شد')
         await bot.delete_messages(call.from_user.id , call.message.id)
     except Exception as e :
         logger.error(e)
+        print('##############################################')
 
 
 

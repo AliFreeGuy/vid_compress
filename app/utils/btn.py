@@ -70,6 +70,9 @@ def vid_editor_btn(vid_data , user_lang  ):
 
 
 
+def user_profile_info(chat_id , name ):
+        return InlineKeyboardMarkup([[InlineKeyboardButton(name  , url=f'tg://openmessage?user_id={str(chat_id)}')]])
+
 
 def user_panel_menu(user_lang  , placeholder):
     setting_text = '⚙️ setting' if user_lang== 'en' else '⚙️ تنظیمات'

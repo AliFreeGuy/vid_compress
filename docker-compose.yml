@@ -9,7 +9,7 @@ services:
       - 8000
     volumes:
       - ./web:/home/web
-    env_file: ./web/.env
+    env_file: .env
     command: /bin/sh -c 'python manage.py collectstatic --noinput; python manage.py makemigrations --noinput; python manage.py migrate; gunicorn --chdir ./web/ web.wsgi:application --bind 0.0.0.0:8000 --reload;'
 
     depends_on:
@@ -19,7 +19,7 @@ services:
     restart: always
     build: ./web/nginx
     ports:
-      - 80:80
+      - 8000:80
       
     volumes:
       - ./web/static:/home/web/static
@@ -32,14 +32,12 @@ services:
     build: ./app
     restart: always
     container_name: ${BOT_NAME}
-    env_file: ./app/.env
+    env_file: .env
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     depends_on:
       - web
       - redis
- 
-
 
 
 
@@ -51,14 +49,13 @@ services:
       - "6381:6379"
 
 
-
-
-
   celery_editor_bot:
     build: ./app
     restart: always
     command: celery -A utils.tasks worker -l info
-    env_file: ./app/.env
+    env_file: .env
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
     depends_on:
       - web
       - redis

@@ -23,17 +23,16 @@ from utils.connection import connection as con
 from config import REDIS_DB, REDIS_HOST, REDIS_PORT
 
 r = redis.Redis(host=REDIS_HOST, port=REDIS_PORT, db=REDIS_DB, decode_responses=True)
-app = Celery('tasks', broker='redis://redis:6379/0', backend='redis://redis:6379/0')
+app = Celery('tasks', broker=f'redis://{REDIS_HOST}:6379/0', backend=f'redis://{REDIS_HOST}:6379/0')
 app.conf.timezone = 'UTC'
 
 app.conf.update(
     task_serializer='json',
     result_serializer='json',
-    accept_content=['json',],
-    worker_concurrency=1,
+    accept_content=['json'],
+    worker_concurrency=4,  # هر کارگر قادر به پردازش 4 وظیفه به طور همزمان
     worker_prefetch_multiplier=1,
 )
-
 
 def progressbar(current, total , task_id=None ):
     percentage = current * 100 // total
@@ -82,7 +81,7 @@ def editor(self , data ):
     videos_folder.mkdir(exist_ok=True)
     file_path = videos_folder / str(self.request.id)
     file_path.mkdir(exist_ok=True)
-
+    
     video_name = f'{file_path}/{random.randint(999 , 999999)}.mp4'
     thumb_name = f'{file_path}/{random.randint(999 , 999999)}.jpeg'
     setting = con.setting

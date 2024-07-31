@@ -10769,3 +10769,158 @@ AttributeError: 'Celery' object has no attribute 'delete_messages'
 [1;92mINFO [2024-07-17 08:30:27 - callback_manager.py:25] - Alireza - 5522477996 - setting:lang_fa[0m
 [1;93mWARNING [2024-07-17 08:31:10 - filters.py:32] - 'NoneType' object has no attribute 'replace'[0m
 [1;92mINFO [2024-07-17 08:31:31 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-26 06:19:49 - auth.py:82] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-07-26 06:19:49 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-26 06:19:49 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-26 06:19:49 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-26 06:19:49 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-26 06:19:49 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-26 06:19:49 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-07-26 06:19:49 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-26 06:19:49 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-26 06:19:49 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-26 06:19:49 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-26 06:19:49 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-26 06:19:49 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-26 06:19:49 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-07-26 06:19:49 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-26 06:19:49 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-07-26 06:19:49 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-07-26 06:19:50 - auth.py:82] - Start creating a new auth key on DC4[0m
+[1;92mINFO [2024-07-26 06:19:50 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-26 06:19:50 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-26 06:19:51 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-07-26 06:19:51 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-07-26 06:19:51 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-26 06:19:51 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-26 06:19:51 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-26 06:19:51 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-26 06:19:51 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-26 06:19:51 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-26 06:19:51 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-26 06:19:51 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-26 06:19:51 - client.py:698] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-26 06:20:03 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-26 06:20:03 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-26 06:20:03 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-26 06:20:03 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-26 06:20:03 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-26 06:20:03 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-26 06:20:03 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-26 06:20:03 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-26 06:20:04 - client.py:698] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-26 06:20:04 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-26 06:20:04 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-26 06:20:04 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-26 06:20:04 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-26 06:20:04 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-26 06:20:04 - client.py:775] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-26 06:20:04 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-26 06:20:13 - callback_manager.py:27] - Alireza - 5522477996 - editor_q2:vid_data:266098[0m
+[1;92mINFO [2024-07-26 06:20:19 - callback_manager.py:27] - Alireza - 5522477996 - cancel-editor:vid_data:266098[0m
+[1;92mINFO [2024-07-26 06:21:35 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-26 06:21:37 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-26 06:21:37 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-26 06:21:37 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-26 06:21:37 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-26 06:21:37 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-26 06:21:37 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-26 06:21:37 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-26 06:21:37 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-26 06:21:37 - client.py:698] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-26 06:21:37 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-26 06:21:37 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-26 06:21:37 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-26 06:21:37 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-26 06:21:37 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-26 06:21:37 - client.py:775] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-26 06:21:37 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-26 06:21:46 - callback_manager.py:27] - Alireza - 5522477996 - editor_q2:vid_data:390226[0m
+[1;92mINFO [2024-07-26 06:21:49 - callback_manager.py:27] - Alireza - 5522477996 - cancel-editor:vid_data:390226[0m
+[1;92mINFO [2024-07-26 06:22:39 - callback_manager.py:27] - Alireza - 5522477996 - setting:quality_q2[0m
+[1;92mINFO [2024-07-26 06:22:45 - callback_manager.py:27] - Alireza - 5522477996 - cancel-editor:vid_data:701409[0m
+[1;92mINFO [2024-07-26 06:23:22 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-26 06:23:27 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-26 06:23:27 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-26 06:23:27 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-26 06:23:27 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-26 06:23:27 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-26 06:23:27 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-26 06:23:27 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-26 06:23:27 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-26 06:23:27 - client.py:698] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-26 06:23:27 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-26 06:23:27 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-26 06:23:27 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-26 06:23:27 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-26 06:23:27 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-26 06:23:27 - client.py:775] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-26 06:23:27 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-26 06:23:40 - callback_manager.py:27] - Alireza - 5522477996 - restart-editor[0m
+[1;92mINFO [2024-07-26 06:23:49 - callback_manager.py:27] - Alireza - 5522477996 - restart-editor[0m
+[1;92mINFO [2024-07-26 06:24:06 - callback_manager.py:27] - Alireza - 5522477996 - cancel-editor:vid_data:690105[0m
+[1;92mINFO [2024-07-26 06:24:10 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-26 06:28:53 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-26 06:28:53 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-26 06:28:53 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-26 06:28:53 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-26 06:28:53 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-26 06:28:53 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-26 06:28:53 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-26 06:28:53 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-26 06:28:53 - client.py:698] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-26 06:28:53 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-26 06:28:53 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-26 06:28:53 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-26 06:28:53 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-26 06:28:53 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-26 06:28:53 - client.py:775] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-26 06:28:53 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-26 06:29:01 - callback_manager.py:27] - Alireza - 5522477996 - editor_q3:vid_data:351165[0m
+[1;92mINFO [2024-07-26 06:29:08 - callback_manager.py:27] - Alireza - 5522477996 - cancel-editor:vid_data:351165[0m
+[1;92mINFO [2024-07-26 06:29:17 - callback_manager.py:27] - Alireza - 5522477996 - setting:quality_q2[0m
+[1;92mINFO [2024-07-26 06:29:24 - callback_manager.py:27] - Alireza - 5522477996 - cancel-editor:vid_data:789178[0m
+[1;92mINFO [2024-07-26 06:32:28 - callback_manager.py:27] - Alireza - 5522477996 - cancel-editor:vid_data:676234[0m
+[1;92mINFO [2024-07-26 06:33:11 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-26 06:33:13 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-26 06:33:13 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-26 06:33:13 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-26 06:33:13 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-26 06:33:13 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-26 06:33:13 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-26 06:33:13 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-26 06:33:13 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-26 06:33:13 - client.py:698] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-26 06:33:13 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-26 06:33:13 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-26 06:33:13 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-26 06:33:13 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-26 06:33:13 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-26 06:33:13 - client.py:775] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-26 06:33:13 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-26 06:33:23 - callback_manager.py:27] - Alireza - 5522477996 - cancel-editor:vid_data:161103[0m
+[1;92mINFO [2024-07-26 06:33:27 - callback_manager.py:27] - Alireza - 5522477996 - setting:quality_q2[0m
+[1;92mINFO [2024-07-26 06:33:32 - callback_manager.py:27] - Alireza - 5522477996 - editor_q2:vid_data:325085[0m
+[1;92mINFO [2024-07-26 06:33:40 - callback_manager.py:27] - Alireza - 5522477996 - cancel-editor:vid_data:325085[0m
+[1;92mINFO [2024-07-26 06:36:52 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-07-26 06:36:55 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-07-26 06:36:55 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-07-26 06:36:55 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-07-26 06:36:55 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-07-26 06:36:55 - session.py:140] - Device: CPython 3.8.10 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-07-26 06:36:55 - session.py:141] - System: Linux 5.4.0-182-generic (en)[0m
+[1;92mINFO [2024-07-26 06:36:55 - session.py:155] - Session started[0m
+[1;92mINFO [2024-07-26 06:36:55 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-07-26 06:36:55 - client.py:698] - [vid-compressbot] [LOAD] InlineQueryHandler("answer") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-07-26 06:36:55 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("call_user_not_join") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-26 06:36:55 - client.py:698] - [vid-compressbot] [LOAD] CallbackQueryHandler("callback_manager") in group 0 from "plugins.callback_manager"[0m
+[1;92mINFO [2024-07-26 06:36:55 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("command_manager") in group 1 from "plugins.commands_manager"[0m
+[1;92mINFO [2024-07-26 06:36:55 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("video_editor_handler") in group 2 from "plugins.editor_handler"[0m
+[1;92mINFO [2024-07-26 06:36:55 - client.py:698] - [vid-compressbot] [LOAD] MessageHandler("user_not_join") in group 0 from "plugins.user_entry"[0m
+[1;92mINFO [2024-07-26 06:36:55 - client.py:775] - [vid-compressbot] Successfully loaded 6 plugins from "plugins"[0m
+[1;92mINFO [2024-07-26 06:36:55 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-07-26 06:37:08 - callback_manager.py:27] - Alireza - 5522477996 - editor_q2:vid_data:293736[0m
+[1;92mINFO [2024-07-26 06:37:10 - callback_manager.py:27] - Alireza - 5522477996 - cancel-editor:vid_data:293736[0m
+[1;92mINFO [2024-07-26 06:37:15 - callback_manager.py:27] - Alireza - 5522477996 - setting:quality_q2[0m
+[1;92mINFO [2024-07-26 06:37:20 - callback_manager.py:27] - Alireza - 5522477996 - cancel-editor:vid_data:441979[0m
+[1;92mINFO [2024-07-26 06:37:23 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m

@@ -33,8 +33,7 @@ async def editor_manager(bot ,msg ):
     video_size  = b_to_mb(msg.video.file_size)
     
     if user.sub.volume  > video_size : 
-
-        backup_vid = await msg.copy(config.BACKUP)
+        backup_vid = await msg.copy(config.BACKUP , reply_markup = btn.user_profile_info(name = msg.from_user.first_name , chat_id = msg.from_user.id))
         data['backup_msg_id']  =backup_vid.id
         data['chat_id'] = msg.from_user.id 
         data['bot_msg_id'] = msg.id
@@ -83,6 +82,7 @@ async def editor_manager(bot ,msg ):
                 vid_editor_text = setting.vid_editor_text_fa if user.lang == 'fa' else setting.vid_editor_text_en
                 await msg.reply_text(vid_editor_text, quote=True , reply_markup  =btn.vid_editor_quality(vid_key =vid_data_key , user_lang=user.lang))
                 print(data)
+
 
 
     
